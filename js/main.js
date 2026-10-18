@@ -115,6 +115,15 @@
   // Formulaire de demande de devis (ouverture du client e-mail)
   const form = document.getElementById("devis-form");
   if (form) {
+    // Présélection du secteur depuis une page secteur (contact.html?secteur=…)
+    const secteur = new URLSearchParams(window.location.search).get("secteur");
+    const select = form.querySelector('select[name="secteur"]');
+    if (secteur && select) {
+      Array.prototype.forEach.call(select.options, function (o) {
+        if (o.value === secteur || o.textContent === secteur) select.value = o.value;
+      });
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const fd = new FormData(form);

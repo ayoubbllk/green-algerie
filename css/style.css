@@ -785,3 +785,115 @@ a.coord:hover { border-color: var(--green); }
   .reel figcaption { font-size: 14px; padding: 32px 10px 10px; }
 }
 .expertise.five img { aspect-ratio: auto; height: 230px; }
+
+/* ——— Pages secteur ——— */
+.page-hero .tagline-lg { font-family: "Saira", sans-serif; font-weight: 700; font-size: 20px; color: var(--mint); margin: 0; }
+.facts {
+  margin: -48px 0 0;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(8,51,30,0.14);
+  overflow: hidden;
+}
+.facts div { padding: 22px 24px; border-right: 1px solid var(--line); }
+.facts div:last-child { border-right: 0; }
+.facts dt { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.facts dd { margin: 0; font-family: "Saira", sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: var(--forest); }
+.svc-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.svc-intro p { margin: 0; font-size: 17px; line-height: 1.75; color: var(--muted); }
+.svc-intro .lead { font-size: 20px; color: var(--ink); font-weight: 500; line-height: 1.6; }
+.svc-intro .copy { display: flex; flex-direction: column; gap: 18px; }
+.svc-intro img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
+.works { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.work { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: grid; grid-template-columns: 42% 1fr; }
+.work img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; }
+.work .body { padding: 24px 26px; display: flex; flex-direction: column; gap: 10px; justify-content: center; }
+.work .num { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent); }
+.work h3 { margin: 0; font-family: "Saira", sans-serif; font-size: 21px; line-height: 1.25; }
+.work p { margin: 0; color: var(--muted); }
+.work.no-img { grid-template-columns: 1fr; }
+.work.no-img .ico { width: 52px; height: 52px; border-radius: 12px; background: var(--cream); display: grid; place-items: center; }
+.system { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+.system .copy { display: flex; flex-direction: column; gap: 16px; }
+.system .copy p { margin: 0; color: var(--on-dark); font-size: 17px; }
+.system .note { font-size: 15px !important; color: #A9C6B3 !important; }
+.layers-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; counter-reset: layer; }
+.layers-list li {
+  counter-increment: layer;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #fff;
+}
+.layers-list li::before {
+  content: counter(layer);
+  width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,0.16);
+  font-family: "Saira", sans-serif; font-weight: 800;
+}
+.layers-list li:nth-child(1) { background: #2E7D4F; }
+.layers-list li:nth-child(2) { background: #1F2A24; }
+.layers-list li:nth-child(3) { background: #3D5A48; }
+.layers-list li:nth-child(4) { background: #5B4A33; }
+.layers-list li:nth-child(5) { background: #7A6243; }
+.layers-list li:nth-child(6) { background: #8C7454; }
+.mat-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.mat-links a {
+  text-decoration: none;
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--forest);
+  background: #fff;
+}
+.mat-links a:hover { border-color: var(--green); }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.checklist li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+.checklist strong { font-family: "Saira", sans-serif; font-size: 19px; }
+.checklist span { color: var(--muted); }
+.reels.two { grid-template-columns: repeat(2, minmax(0, 300px)); }
+.reels-land.two { grid-template-columns: repeat(2, 1fr); }
+.pager { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+.pager a { padding: 34px 40px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 6px; }
+.pager a:hover { background: var(--cream); }
+.pager a + a { border-left: 1px solid var(--line); text-align: right; }
+.pager span { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+.pager strong { font-family: "Saira", sans-serif; font-size: 22px; }
+.exp-card .more { margin-top: 6px; font-family: "Saira", sans-serif; font-weight: 700; text-decoration: none; color: var(--green); }
+.sector-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.sector-links a { display: flex; justify-content: space-between; gap: 12px; padding: 18px 20px; border-radius: 10px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: var(--ink); font-family: "Saira", sans-serif; font-weight: 700; font-size: 17px; }
+.sector-links a:hover { border-color: var(--green); color: var(--green); }
+
+@media (max-width: 1100px) {
+  .facts { grid-template-columns: 1fr 1fr; }
+  .facts div:nth-child(2) { border-right: 0; }
+  .facts div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .works { grid-template-columns: 1fr; }
+  .checklist { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .svc-intro, .system { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 640px) {
+  .facts { grid-template-columns: 1fr; }
+  .facts div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .facts div:last-child { border-bottom: 0; }
+  .work { grid-template-columns: 1fr; }
+  .work img { min-height: 0; aspect-ratio: 16 / 10; height: auto; }
+  .pager { grid-template-columns: 1fr; }
+  .pager a + a { border-left: 0; border-top: 1px solid var(--line); text-align: left; }
+  .pager a { padding: 24px 16px; }
+  .reels.two { grid-template-columns: 1fr 1fr; }
+  .reels-land.two { grid-template-columns: 1fr; }
+}
