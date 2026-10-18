@@ -1,4 +1,7 @@
 (function () {
+  const EMAIL = "algrnsolutionssarl@gmail.com";
+
+  // Menu mobile
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");
   if (toggle && nav) {
@@ -8,117 +11,132 @@
     });
   }
 
-  const tabs = document.querySelectorAll(".tab");
-  const panel = document.getElementById("secteur-panel");
-  if (tabs.length && panel) {
-    const data = [
-      {
-        img: "images/bourbier.jpg",
-        alt: "Bourbier pétrolier étanché près d’un forage",
-        tag: "BOURBIERS DE FORAGE",
-        enjeu: "Empêcher les boues et hydrocarbures d’atteindre le sol et la nappe.",
-        texte:
-          "Les bourbiers de forage sont étanchés par géomembrane PEHD soudée, posée sur géotextile, puis contrôlée avant mise en service.",
-        services: ["Bourbiers pétroliers", "Géomembranes", "Terrassements"],
-      },
-      {
-        img: "images/cet.jpg",
-        alt: "Casier de centre d’enfouissement en cours d’étanchéité",
-        tag: "CENTRES D’ENFOUISSEMENT",
-        enjeu: "Confiner les déchets et drainer les lixiviats en toute sécurité.",
-        texte:
-          "Les casiers associent barrière étanche, couche drainante et géotextile de protection, sur le fond comme sur les talus.",
-        services: ["Centres d’enfouissement technique", "Géocomposites", "Lagunes"],
-      },
-      {
-        img: "images/irrigation.jpg",
-        alt: "Bassin d’irrigation au milieu des cultures",
-        tag: "BASSINS D’IRRIGATION",
-        enjeu: "Garder chaque mètre cube d’eau au lieu de le perdre dans le sol.",
-        texte:
-          "Bassins d’irrigation et lagunes sont revêtus d’une géomembrane adaptée au soleil et au volume stocké.",
-        services: ["Bassins d’irrigation", "Lagunes", "Géotextiles"],
-      },
-      {
-        img: "images/terrasse.jpg",
-        alt: "Immeuble avec terrasse-jardin",
-        tag: "TERRASSES · PISCINES · SOLS",
-        enjeu: "Des toitures, piscines et sous-sols qui ne fuient plus.",
-        texte:
-          "Terrasses-jardins, piscines, cuvelages et sols industriels : systèmes d’étanchéité récents et revêtements époxy.",
-        services: ["Terrasses-jardins", "Piscines", "Époxy-Résine"],
-      },
-    ];
+  const canObserve = "IntersectionObserver" in window;
 
-    function render(i) {
-      const s = data[i];
-      panel.querySelector("img").src = s.img;
-      panel.querySelector("img").alt = s.alt;
-      panel.querySelector(".tag").textContent = s.tag;
-      panel.querySelector(".enjeu").textContent = s.enjeu;
-      panel.querySelector(".texte").textContent = s.texte;
-      panel.querySelector(".panel-links").innerHTML = s.services
-        .map(
-          (x) =>
-            '<a href="geomembranes.html"><span>' +
-            x +
-            '</span><span aria-hidden="true">→</span></a>'
-        )
-        .join("");
-      tabs.forEach(function (t, idx) {
-        t.setAttribute("aria-selected", idx === i ? "true" : "false");
-      });
-    }
-
-    tabs.forEach(function (tab, i) {
-      tab.addEventListener("click", function () {
-        render(i);
-      });
-    });
+  // Apparition au défilement
+  const reveals = document.querySelectorAll(".reveal");
+  if (canObserve) {
+    const io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
+  // Vidéos : lecture uniquement lorsqu'elles sont visibles
+  const videos = document.querySelectorAll("video[data-autoplay]");
+  if (videos.length && canObserve) {
+    const vo = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          const v = e.target;
+          if (e.isIntersecting) {
+            const p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+    videos.forEach(function (v) { vo.observe(v); });
+  }
+
+  // Filtres de la galerie
   const chips = document.querySelectorAll(".chip");
-  const rows = document.querySelectorAll("[data-fam]");
-  if (chips.length && rows.length) {
+  const items = document.querySelectorAll(".gallery figure");
+  if (chips.length && items.length) {
     chips.forEach(function (chip) {
       chip.addEventListener("click", function () {
-        const fam = chip.getAttribute("data-filter");
+        const cat = chip.getAttribute("data-filter");
         chips.forEach(function (c) {
           c.setAttribute("aria-pressed", c === chip ? "true" : "false");
         });
-        rows.forEach(function (row) {
-          const match = fam === "all" || row.getAttribute("data-fam") === fam;
-          row.style.display = match ? "" : "none";
+        items.forEach(function (it) {
+          it.hidden = !(cat === "all" || it.getAttribute("data-cat") === cat);
         });
       });
     });
   }
 
+  // Visionneuse photo
+  const lb = document.getElementById("lightbox");
+  if (lb && items.length) {
+    const lbImg = lb.querySelector("img");
+    const lbCap = lb.querySelector("figcaption");
+    let current = 0;
+    let visible = [];
+
+    function show(i) {
+      current = (i + visible.length) % visible.length;
+      const fig = visible[current];
+      const img = fig.querySelector("img");
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCap.textContent = fig.querySelector("figcaption").textContent;
+    }
+    function open(fig) {
+      visible = Array.prototype.filter.call(items, function (it) { return !it.hidden; });
+      show(visible.indexOf(fig));
+      lb.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      lb.querySelector(".lb-close").focus();
+    }
+    function close() {
+      lb.classList.remove("is-open");
+      document.body.style.overflow = "";
+    }
+
+    items.forEach(function (fig) {
+      fig.querySelector("button").addEventListener("click", function () { open(fig); });
+    });
+    lb.querySelector(".lb-close").addEventListener("click", close);
+    lb.querySelector(".lb-prev").addEventListener("click", function () { show(current - 1); });
+    lb.querySelector(".lb-next").addEventListener("click", function () { show(current + 1); });
+    lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+    document.addEventListener("keydown", function (e) {
+      if (!lb.classList.contains("is-open")) return;
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowLeft") show(current - 1);
+      if (e.key === "ArrowRight") show(current + 1);
+    });
+  }
+
+  // Formulaire de demande de devis (ouverture du client e-mail)
   const form = document.getElementById("devis-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const fd = new FormData(form);
       const lines = [
-        "Demande de devis ALGRN Solutions",
+        "Demande de devis – ALGRN Solutions",
         "",
-        "Nom : " + (fd.get("nom") || ""),
+        "Nom et prénom : " + (fd.get("nom") || ""),
         "Entreprise : " + (fd.get("entreprise") || ""),
         "Téléphone : " + (fd.get("tel") || ""),
         "E-mail : " + (fd.get("email") || ""),
-        "Service : " + (fd.get("service") || ""),
-        "Wilaya : " + (fd.get("wilaya") || ""),
-        "Surface : " + (fd.get("surface") || "") + " m²",
+        "Secteur : " + (fd.get("secteur") || ""),
+        "Wilaya du chantier : " + (fd.get("wilaya") || ""),
+        "Surface approximative : " + (fd.get("surface") ? fd.get("surface") + " m²" : ""),
         "",
+        "Description du projet :",
         fd.get("message") || "",
       ];
-      const subject = encodeURIComponent("Demande de devis — " + (fd.get("service") || "ALGRN"));
+      const subject = encodeURIComponent("Demande de devis – " + (fd.get("secteur") || "ALGRN Solutions"));
       const body = encodeURIComponent(lines.join("\n"));
-      window.location.href =
-        "mailto:eurlalgrnsolutions@gmail.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:" + EMAIL + "?subject=" + subject + "&body=" + body;
       const ok = document.getElementById("form-ok");
       if (ok) ok.classList.add("is-on");
-      form.reset();
     });
   }
 })();
