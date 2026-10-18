@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,45 +26,46 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-      <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
         <a href="solutions.html">Expertises &amp; solutions</a>
-        <a href="realisations.html" class="is-active">Réalisations</a>
+        <a href="realisations.html" aria-current="page">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <img class="bg" src="images/photos/site-petrolier-controle.jpg" alt="">
+    <section class="page-head">
       <div class="wrap">
         <nav class="crumbs" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Réalisations</span></nav>
-        <h1 class="display">Nos réalisations</h1>
-        <p>Sites pétroliers et industriels, bassins, lagunes, structures enterrées et toitures-terrasses&nbsp;: nos chantiers en photos et en vidéos.</p>
+        <div class="page-head-grid">
+          <h1 class="h1">Nos <em>réalisations</em></h1>
+          <p class="intro">Sites pétroliers et industriels, bassins, lagunes, structures enterrées et toitures-terrasses&nbsp;: nos chantiers en photos et en vidéos.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="photos">
+    <section class="section" id="photos" style="padding-top:0">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Galerie photos</span>
-            <h2 class="display">Nos chantiers en images</h2>
+        <div class="sec-head">
+          <div class="idx"><b>01</b><span class="label">Galerie photos</span></div>
+          <div class="main">
+            <div><h2 class="h2">Nos chantiers en images</h2></div>
+            <p>Cliquez sur une photo pour l’agrandir.</p>
           </div>
-          <p>Cliquez sur une photo pour l’agrandir.</p>
         </div>
         <div class="filters" role="group" aria-label="Filtrer les photos">
-          <button class="chip" type="button" data-filter="all" aria-pressed="true">Toutes</button>
-          <button class="chip" type="button" data-filter="petrole" aria-pressed="false">Pétrole &amp; industrie</button>
-          <button class="chip" type="button" data-filter="bassins" aria-pressed="false">Bassins &amp; lagunes</button>
-          <button class="chip" type="button" data-filter="genie" aria-pressed="false">Génie civil &amp; bâtiment</button>
-          <button class="chip" type="button" data-filter="controle" aria-pressed="false">Soudure &amp; contrôle</button>
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Toutes<span class="c">54</span></button>
+          <button class="chip" type="button" data-filter="petrole" aria-pressed="false">Pétrole &amp; industrie<span class="c">13</span></button>
+          <button class="chip" type="button" data-filter="bassins" aria-pressed="false">Bassins &amp; lagunes<span class="c">22</span></button>
+          <button class="chip" type="button" data-filter="genie" aria-pressed="false">Génie civil &amp; bâtiment<span class="c">13</span></button>
+          <button class="chip" type="button" data-filter="controle" aria-pressed="false">Soudure &amp; contrôle<span class="c">6</span></button>
         </div>
-        <div class="gallery">
-          <figure class="big" data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Bassin étanché par géomembrane en zone saharienne"><img src="images/photos/hero-bassin-desert.jpg" alt="Bassin étanché par géomembrane au pied des dunes" loading="lazy"></button><figcaption>Bassin étanché par géomembrane en zone saharienne</figcaption></figure>
+        <div class="masonry gallery">
+          <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Bassin étanché par géomembrane en zone saharienne"><img src="images/photos/hero-bassin-desert.jpg" alt="Bassin étanché par géomembrane au pied des dunes" loading="lazy"></button><figcaption>Bassin étanché par géomembrane en zone saharienne</figcaption></figure>
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Étanchéité d’une rétention sous bac de stockage"><img src="images/photos/retention-bac-stockage.jpg" alt="Géomembrane posée dans une rétention sous bac de stockage" loading="lazy"></button><figcaption>Étanchéité d’une rétention sous bac de stockage</figcaption></figure>
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Soudure de géomembrane sur un site pétrolier"><img src="images/photos/site-petrolier-soudure.jpg" alt="Technicien soudant une géomembrane, entouré d’agents d’un site pétrolier" loading="lazy"></button><figcaption>Soudure de géomembrane sur un site pétrolier</figcaption></figure>
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Rétention sous bac de stockage"><img src="images/photos/retention-bac-stockage-2.jpg" alt="Rétention sous bac de stockage revêtue de géomembrane" loading="lazy"></button><figcaption>Rétention sous bac de stockage</figcaption></figure>
@@ -77,16 +78,16 @@
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Ouvrage de rétention en site industriel"><img src="images/photos/retention-site-industriel.jpg" alt="Ouvrage de rétention en béton revêtu de géomembrane dans un site industriel" loading="lazy"></button><figcaption>Ouvrage de rétention en site industriel</figcaption></figure>
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Chantier d’étanchéité en site industriel"><img src="images/photos/chantier-industriel.jpg" alt="Techniciens sur un chantier d’étanchéité en site industriel" loading="lazy"></button><figcaption>Chantier d’étanchéité en site industriel</figcaption></figure>
           <figure data-cat="petrole"><button type="button" aria-label="Agrandir&nbsp;: Bassin étanché en site industriel"><img src="images/photos/bassin-site-industriel.jpg" alt="Technicien sur une géomembrane posée dans un bassin industriel" loading="lazy"></button><figcaption>Bassin étanché en site industriel</figcaption></figure>
-          <figure class="big" data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’irrigation étanché par géomembrane"><img src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane, entouré de collines" loading="lazy"></button><figcaption>Bassin d’irrigation étanché par géomembrane</figcaption></figure>
+          <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’irrigation étanché par géomembrane"><img src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane, entouré de collines" loading="lazy"></button><figcaption>Bassin d’irrigation étanché par géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Retenue d’eau étanchée par géomembrane"><img src="images/photos/retenue-eau-irrigation.jpg" alt="Retenue d’eau étanchée par géomembrane" loading="lazy"></button><figcaption>Retenue d’eau étanchée par géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin de stockage d’eau en service"><img src="images/photos/bassin-eau-plaine.jpg" alt="Bassin de stockage d’eau rempli" loading="lazy"></button><figcaption>Bassin de stockage d’eau en service</figcaption></figure>
-          <figure class="tall" data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’eau étanché par géomembrane"><img src="images/photos/bassin-eau-talus.jpg" alt="Bassin d’eau revêtu de géomembrane" loading="lazy"></button><figcaption>Bassin d’eau étanché par géomembrane</figcaption></figure>
+          <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’eau étanché par géomembrane"><img src="images/photos/bassin-eau-talus.jpg" alt="Bassin d’eau revêtu de géomembrane" loading="lazy"></button><figcaption>Bassin d’eau étanché par géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Lagune étanchée par géomembrane"><img src="images/photos/lagunage-geomembrane.jpg" alt="Lagune revêtue de géomembrane" loading="lazy"></button><figcaption>Lagune étanchée par géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin en eau après étanchéité"><img src="images/photos/bassin-eau-rempli.jpg" alt="Bassin rempli d’eau après pose de la géomembrane" loading="lazy"></button><figcaption>Bassin en eau après étanchéité</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’irrigation en service"><img src="images/photos/bassin-irrigation.jpg" alt="Bassin d’irrigation rempli d’eau" loading="lazy"></button><figcaption>Bassin d’irrigation en service</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Réservoirs circulaires revêtus de géomembrane"><img src="images/photos/reservoirs-circulaires.jpg" alt="Réservoirs circulaires revêtus de géomembrane" loading="lazy"></button><figcaption>Réservoirs circulaires revêtus de géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin de stockage d’eau"><img src="images/photos/bassin-eau-chantier.jpg" alt="Bassin de stockage d’eau étanché par géomembrane" loading="lazy"></button><figcaption>Bassin de stockage d’eau</figcaption></figure>
-          <figure class="tall" data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’eau et talus aménagés"><img src="images/photos/bassin-eau-colline.jpg" alt="Bassin d’eau étanché par géomembrane" loading="lazy"></button><figcaption>Bassin d’eau et talus aménagés</figcaption></figure>
+          <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin d’eau et talus aménagés"><img src="images/photos/bassin-eau-colline.jpg" alt="Bassin d’eau étanché par géomembrane" loading="lazy"></button><figcaption>Bassin d’eau et talus aménagés</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Réservoir circulaire revêtu de géomembrane"><img src="images/photos/reservoir-circulaire.jpg" alt="Réservoir circulaire revêtu de géomembrane" loading="lazy"></button><figcaption>Réservoir circulaire revêtu de géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Grand bassin étanché par géomembrane"><img src="images/photos/casier-cet.jpg" alt="Grand bassin revêtu de géomembrane" loading="lazy"></button><figcaption>Grand bassin étanché par géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Ouvrage étanché par géomembrane"><img src="images/photos/casier-cet-2.jpg" alt="Ouvrage revêtu de géomembrane" loading="lazy"></button><figcaption>Ouvrage étanché par géomembrane</figcaption></figure>
@@ -98,78 +99,78 @@
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Bassin rectangulaire revêtu de géomembrane"><img src="images/photos/bassin-geomembrane-angles.jpg" alt="Bassin rectangulaire revêtu de géomembrane" loading="lazy"></button><figcaption>Bassin rectangulaire revêtu de géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Intervention sur géomembrane"><img src="images/photos/intervention-geomembrane.jpg" alt="Technicien intervenant sur une géomembrane" loading="lazy"></button><figcaption>Intervention sur géomembrane</figcaption></figure>
           <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Station de pompage et de filtration pour l’irrigation"><img src="images/photos/station-irrigation.jpg" alt="Station de pompage et de filtration" loading="lazy"></button><figcaption>Station de pompage et de filtration pour l’irrigation</figcaption></figure>
-          <figure class="tall" data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Raccordement de conduites PEHD"><img src="images/photos/conduite-pehd.jpg" alt="Raccordement de conduites en PEHD sur chantier" loading="lazy"></button><figcaption>Raccordement de conduites PEHD</figcaption></figure>
+          <figure data-cat="bassins"><button type="button" aria-label="Agrandir&nbsp;: Raccordement de conduites PEHD"><img src="images/photos/conduite-pehd.jpg" alt="Raccordement de conduites en PEHD sur chantier" loading="lazy"></button><figcaption>Raccordement de conduites PEHD</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Étanchéité d’une structure en béton"><img src="images/photos/ouvrage-enterre-pvc.jpg" alt="Membranes d’étanchéité posées sur un radier et des voiles en béton" loading="lazy"></button><figcaption>Étanchéité d’une structure en béton</figcaption></figure>
-          <figure class="big" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Membranes d’étanchéité sur radier et voiles"><img src="images/photos/ouvrage-enterre-pvc-2.jpg" alt="Membranes d’étanchéité posées sur un grand radier et des voiles" loading="lazy"></button><figcaption>Membranes d’étanchéité sur radier et voiles</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Membranes d’étanchéité sur radier et voiles"><img src="images/photos/ouvrage-enterre-pvc-2.jpg" alt="Membranes d’étanchéité posées sur un grand radier et des voiles" loading="lazy"></button><figcaption>Membranes d’étanchéité sur radier et voiles</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Pose de membrane d’étanchéité sur radier"><img src="images/photos/radier-membrane-pvc.jpg" alt="Ouvriers posant une membrane d’étanchéité sur un radier" loading="lazy"></button><figcaption>Pose de membrane d’étanchéité sur radier</figcaption></figure>
-          <figure class="tall" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Membrane d’étanchéité sur grande surface"><img src="images/photos/radier-membrane-pvc-2.jpg" alt="Membrane d’étanchéité posée sur une grande surface" loading="lazy"></button><figcaption>Membrane d’étanchéité sur grande surface</figcaption></figure>
-          <figure class="tall" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Protection et drainage des fondations"><img src="images/photos/fondations-drainage.jpg" alt="Pose d’une nappe de protection sur un mur de fondation" loading="lazy"></button><figcaption>Protection et drainage des fondations</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Membrane d’étanchéité sur grande surface"><img src="images/photos/radier-membrane-pvc-2.jpg" alt="Membrane d’étanchéité posée sur une grande surface" loading="lazy"></button><figcaption>Membrane d’étanchéité sur grande surface</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Protection et drainage des fondations"><img src="images/photos/fondations-drainage.jpg" alt="Pose d’une nappe de protection sur un mur de fondation" loading="lazy"></button><figcaption>Protection et drainage des fondations</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Protection et drainage d’un mur enterré"><img src="images/photos/fondations-drainage-2.jpg" alt="Pose d’une nappe de protection et de drainage sur un mur enterré" loading="lazy"></button><figcaption>Protection et drainage d’un mur enterré</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Tranchée drainante avec géotextile"><img src="images/photos/drainage-tranchee.jpg" alt="Tranchée drainante garnie de géotextile et de gravier" loading="lazy"></button><figcaption>Tranchée drainante avec géotextile</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Drain enveloppé de géotextile"><img src="images/photos/drain-geotextile.jpg" alt="Drain enveloppé de géotextile en pied de fondation" loading="lazy"></button><figcaption>Drain enveloppé de géotextile</figcaption></figure>
-          <figure class="tall" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Pose de géotextile en tranchée"><img src="images/photos/tranchee-geotextile.jpg" alt="Ouvrier posant un géotextile en tranchée" loading="lazy"></button><figcaption>Pose de géotextile en tranchée</figcaption></figure>
-          <figure class="tall" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Stabilisation de talus par géocellules"><img src="images/photos/stabilisation-talus.jpg" alt="Mise en place de géocellules sur un talus" loading="lazy"></button><figcaption>Stabilisation de talus par géocellules</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Pose de géotextile en tranchée"><img src="images/photos/tranchee-geotextile.jpg" alt="Ouvrier posant un géotextile en tranchée" loading="lazy"></button><figcaption>Pose de géotextile en tranchée</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Stabilisation de talus par géocellules"><img src="images/photos/stabilisation-talus.jpg" alt="Mise en place de géocellules sur un talus" loading="lazy"></button><figcaption>Stabilisation de talus par géocellules</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Étanchéité de toiture-terrasse"><img src="images/photos/toiture-terrasse.jpg" alt="Pose de membranes d’étanchéité sur une toiture-terrasse" loading="lazy"></button><figcaption>Étanchéité de toiture-terrasse</figcaption></figure>
-          <figure class="tall" data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Pose de membranes sur toiture-terrasse"><img src="images/photos/toiture-terrasse-2.jpg" alt="Ouvriers posant des membranes sur une toiture-terrasse" loading="lazy"></button><figcaption>Pose de membranes sur toiture-terrasse</figcaption></figure>
+          <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Pose de membranes sur toiture-terrasse"><img src="images/photos/toiture-terrasse-2.jpg" alt="Ouvriers posant des membranes sur une toiture-terrasse" loading="lazy"></button><figcaption>Pose de membranes sur toiture-terrasse</figcaption></figure>
           <figure data-cat="genie"><button type="button" aria-label="Agrandir&nbsp;: Géomembrane sur ouvrage en béton"><img src="images/photos/bassin-beton-geomembrane.jpg" alt="Géomembrane posée sur les parois d’un ouvrage en béton" loading="lazy"></button><figcaption>Géomembrane sur ouvrage en béton</figcaption></figure>
           <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure de géomembrane"><img src="images/photos/soudure-geomembrane.jpg" alt="Technicien soudant une géomembrane" loading="lazy"></button><figcaption>Soudure de géomembrane</figcaption></figure>
-          <figure class="tall" data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Contrôle d’une soudure sur chantier"><img src="images/photos/controle-soudure.jpg" alt="Techniciens contrôlant une soudure de géomembrane" loading="lazy"></button><figcaption>Contrôle d’une soudure sur chantier</figcaption></figure>
-          <figure class="tall" data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Essai de traction sur échantillon de soudure"><img src="images/photos/essai-soudure.jpg" alt="Appareil d’essai de traction sur un échantillon de soudure" loading="lazy"></button><figcaption>Essai de traction sur échantillon de soudure</figcaption></figure>
+          <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Contrôle d’une soudure sur chantier"><img src="images/photos/controle-soudure.jpg" alt="Techniciens contrôlant une soudure de géomembrane" loading="lazy"></button><figcaption>Contrôle d’une soudure sur chantier</figcaption></figure>
+          <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Essai de traction sur échantillon de soudure"><img src="images/photos/essai-soudure.jpg" alt="Appareil d’essai de traction sur un échantillon de soudure" loading="lazy"></button><figcaption>Essai de traction sur échantillon de soudure</figcaption></figure>
           <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure par extrusion"><img src="images/photos/soudure-extrusion.jpg" alt="Techniciens réalisant une soudure par extrusion" loading="lazy"></button><figcaption>Soudure par extrusion</figcaption></figure>
-          <figure class="tall" data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure de géomembrane sur talus"><img src="images/photos/soudure-talus.jpg" alt="Technicien soudant une géomembrane sur un talus" loading="lazy"></button><figcaption>Soudure de géomembrane sur talus</figcaption></figure>
-          <figure class="tall" data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure d’une membrane sur chantier"><img src="images/photos/soudure-membrane-pvc.jpg" alt="Techniciens soudant une membrane d’étanchéité" loading="lazy"></button><figcaption>Soudure d’une membrane sur chantier</figcaption></figure>
+          <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure de géomembrane sur talus"><img src="images/photos/soudure-talus.jpg" alt="Technicien soudant une géomembrane sur un talus" loading="lazy"></button><figcaption>Soudure de géomembrane sur talus</figcaption></figure>
+          <figure data-cat="controle"><button type="button" aria-label="Agrandir&nbsp;: Soudure d’une membrane sur chantier"><img src="images/photos/soudure-membrane-pvc.jpg" alt="Techniciens soudant une membrane d’étanchéité" loading="lazy"></button><figcaption>Soudure d’une membrane sur chantier</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section on-dark" id="videos">
+    <section class="section section-dark" id="videos">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Vidéos</span>
-            <h2 class="display">Nos équipes sur le terrain</h2>
+        <div class="sec-head">
+          <div class="idx"><b>02</b><span class="label">Vidéos</span></div>
+          <div class="main">
+            <div><h2 class="h2">Nos équipes <em>sur le terrain</em></h2></div>
+            <p>Déroulage, soudure et pose de géomembranes et de géotextiles sur nos chantiers.</p>
           </div>
-          <p>Déroulage, soudure et pose de géomembranes et de géotextiles sur nos chantiers.</p>
         </div>
         <div class="reels">
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/deroulage-geomembrane.jpg" aria-label="Déroulage d’un rouleau de géomembrane par une équipe">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/deroulage-geomembrane.jpg" aria-label="Déroulage d’une géomembrane">
               <source src="videos/deroulage-geomembrane.mp4" type="video/mp4">
             </video>
             <figcaption>Déroulage d’une géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-geomembrane.jpg" aria-label="Soudure d’une géomembrane sur chantier">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-geomembrane.jpg" aria-label="Soudure d’une géomembrane">
               <source src="videos/soudure-geomembrane.mp4" type="video/mp4">
             </video>
             <figcaption>Soudure d’une géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/equipe-pose-desert.jpg" aria-label="Équipe mettant en place une géomembrane en zone désertique">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/equipe-pose-desert.jpg" aria-label="Mise en place d’une géomembrane">
               <source src="videos/equipe-pose-desert.mp4" type="video/mp4">
             </video>
             <figcaption>Mise en place d’une géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/bourbier-desert.jpg" aria-label="Géomembrane posée et lestée en zone désertique">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/bourbier-desert.jpg" aria-label="Géomembrane posée en zone désertique">
               <source src="videos/bourbier-desert.mp4" type="video/mp4">
             </video>
             <figcaption>Géomembrane posée en zone désertique</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-automatique.jpg" aria-label="Soudure d’une membrane à l’aide d’une soudeuse automatique">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-automatique.jpg" aria-label="Soudure automatique d’une membrane">
               <source src="videos/soudure-automatique.mp4" type="video/mp4">
             </video>
             <figcaption>Soudure automatique d’une membrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-collines.jpg" aria-label="Bassin en cours d’étanchéité par géomembrane">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-collines.jpg" aria-label="Bassin en cours d’étanchéité">
               <source src="videos/bassin-geomembrane-collines.mp4" type="video/mp4">
             </video>
             <figcaption>Bassin en cours d’étanchéité</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-talus.jpg" aria-label="Géomembrane posée sur les talus d’un bassin">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-talus.jpg" aria-label="Géomembrane sur les talus d’un bassin">
               <source src="videos/bassin-geomembrane-talus.mp4" type="video/mp4">
             </video>
             <figcaption>Géomembrane sur les talus d’un bassin</figcaption>
@@ -189,13 +190,13 @@
             <figcaption>Bassin revêtu de géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/pose-geotextile-desert.jpg" aria-label="Équipe déroulant un géotextile en zone désertique">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/pose-geotextile-desert.jpg" aria-label="Déroulage d’un géotextile">
               <source src="videos/pose-geotextile-desert.mp4" type="video/mp4">
             </video>
             <figcaption>Déroulage d’un géotextile</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/talus-geotextile-geomembrane.jpg" aria-label="Pose de géotextile et de géomembrane sur un talus">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/talus-geotextile-geomembrane.jpg" aria-label="Géotextile et géomembrane sur talus">
               <source src="videos/talus-geotextile-geomembrane.mp4" type="video/mp4">
             </video>
             <figcaption>Géotextile et géomembrane sur talus</figcaption>
@@ -204,16 +205,21 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <img class="bg" src="images/photos/bassin-irrigation-collines.jpg" alt="" loading="lazy">
+    <section class="cta">
       <div class="wrap">
-        <div>
-          <h2 class="display">Votre ouvrage sera notre prochaine réalisation.</h2>
+        <div class="copy">
+          <span class="label">Contact</span>
+          <h2 class="h2">Votre ouvrage sera notre prochaine réalisation.</h2>
           <p>Parlez-nous de votre projet&nbsp;: nous vous répondons avec une proposition technique.</p>
+          <div class="actions">
+            <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
+            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
+          </div>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-accent btn-lg" href="contact.html#devis">Demander un devis</a>
-          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
+        <div class="contact-lines">
+          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
+          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
+          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
         </div>
       </div>
     </section>
@@ -230,6 +236,7 @@
   </div>
 
   <footer class="site-footer">
+    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -267,7 +274,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,326 @@
+[
+ {
+  "file": "hero-bassin-desert.jpg",
+  "cat": "petrole",
+  "alt": "Bassin étanché par géomembrane au pied des dunes",
+  "cap": "Bassin étanché par géomembrane en zone saharienne"
+ },
+ {
+  "file": "retention-bac-stockage.jpg",
+  "cat": "petrole",
+  "alt": "Géomembrane posée dans une rétention sous bac de stockage",
+  "cap": "Étanchéité d’une rétention sous bac de stockage"
+ },
+ {
+  "file": "site-petrolier-soudure.jpg",
+  "cat": "petrole",
+  "alt": "Technicien soudant une géomembrane, entouré d’agents d’un site pétrolier",
+  "cap": "Soudure de géomembrane sur un site pétrolier"
+ },
+ {
+  "file": "retention-bac-stockage-2.jpg",
+  "cat": "petrole",
+  "alt": "Rétention sous bac de stockage revêtue de géomembrane",
+  "cap": "Rétention sous bac de stockage"
+ },
+ {
+  "file": "bourbier-petrolier-desert.jpg",
+  "cat": "petrole",
+  "alt": "Équipe sur une géomembrane posée en zone désertique",
+  "cap": "Pose de géomembrane sur un site pétrolier"
+ },
+ {
+  "file": "site-petrolier-controle.jpg",
+  "cat": "petrole",
+  "alt": "Équipe contrôlant une soudure de géomembrane sur un talus",
+  "cap": "Contrôle des travaux sur un site pétrolier"
+ },
+ {
+  "file": "retention-bac-stockage-3.jpg",
+  "cat": "petrole",
+  "alt": "Technicien marchant sur une géomembrane dans une rétention",
+  "cap": "Géomembrane en place dans une rétention"
+ },
+ {
+  "file": "retention-bac-stockage-4.jpg",
+  "cat": "petrole",
+  "alt": "Géomembrane lestée dans une rétention sous bac de stockage",
+  "cap": "Rétention sous bac de stockage en fin de pose"
+ },
+ {
+  "file": "bourbier-ancrage.jpg",
+  "cat": "petrole",
+  "alt": "Géomembrane déroulée au pied des dunes",
+  "cap": "Géomembrane posée en zone désertique"
+ },
+ {
+  "file": "bassin-industriel-geotextile.jpg",
+  "cat": "petrole",
+  "alt": "Bassin revêtu de géomembrane et de géotextile dans un site industriel",
+  "cap": "Bassin en site industriel&nbsp;: géomembrane et géotextile"
+ },
+ {
+  "file": "retention-site-industriel.jpg",
+  "cat": "petrole",
+  "alt": "Ouvrage de rétention en béton revêtu de géomembrane dans un site industriel",
+  "cap": "Ouvrage de rétention en site industriel"
+ },
+ {
+  "file": "chantier-industriel.jpg",
+  "cat": "petrole",
+  "alt": "Techniciens sur un chantier d’étanchéité en site industriel",
+  "cap": "Chantier d’étanchéité en site industriel"
+ },
+ {
+  "file": "bassin-site-industriel.jpg",
+  "cat": "petrole",
+  "alt": "Technicien sur une géomembrane posée dans un bassin industriel",
+  "cap": "Bassin étanché en site industriel"
+ },
+ {
+  "file": "bassin-irrigation-collines.jpg",
+  "cat": "bassins",
+  "alt": "Bassin d’irrigation étanché par géomembrane, entouré de collines",
+  "cap": "Bassin d’irrigation étanché par géomembrane"
+ },
+ {
+  "file": "retenue-eau-irrigation.jpg",
+  "cat": "bassins",
+  "alt": "Retenue d’eau étanchée par géomembrane",
+  "cap": "Retenue d’eau étanchée par géomembrane"
+ },
+ {
+  "file": "bassin-eau-plaine.jpg",
+  "cat": "bassins",
+  "alt": "Bassin de stockage d’eau rempli",
+  "cap": "Bassin de stockage d’eau en service"
+ },
+ {
+  "file": "bassin-eau-talus.jpg",
+  "cat": "bassins",
+  "alt": "Bassin d’eau revêtu de géomembrane",
+  "cap": "Bassin d’eau étanché par géomembrane"
+ },
+ {
+  "file": "lagunage-geomembrane.jpg",
+  "cat": "bassins",
+  "alt": "Lagune revêtue de géomembrane",
+  "cap": "Lagune étanchée par géomembrane"
+ },
+ {
+  "file": "bassin-eau-rempli.jpg",
+  "cat": "bassins",
+  "alt": "Bassin rempli d’eau après pose de la géomembrane",
+  "cap": "Bassin en eau après étanchéité"
+ },
+ {
+  "file": "bassin-irrigation.jpg",
+  "cat": "bassins",
+  "alt": "Bassin d’irrigation rempli d’eau",
+  "cap": "Bassin d’irrigation en service"
+ },
+ {
+  "file": "reservoirs-circulaires.jpg",
+  "cat": "bassins",
+  "alt": "Réservoirs circulaires revêtus de géomembrane",
+  "cap": "Réservoirs circulaires revêtus de géomembrane"
+ },
+ {
+  "file": "bassin-eau-chantier.jpg",
+  "cat": "bassins",
+  "alt": "Bassin de stockage d’eau étanché par géomembrane",
+  "cap": "Bassin de stockage d’eau"
+ },
+ {
+  "file": "bassin-eau-colline.jpg",
+  "cat": "bassins",
+  "alt": "Bassin d’eau étanché par géomembrane",
+  "cap": "Bassin d’eau et talus aménagés"
+ },
+ {
+  "file": "reservoir-circulaire.jpg",
+  "cat": "bassins",
+  "alt": "Réservoir circulaire revêtu de géomembrane",
+  "cap": "Réservoir circulaire revêtu de géomembrane"
+ },
+ {
+  "file": "casier-cet.jpg",
+  "cat": "bassins",
+  "alt": "Grand bassin revêtu de géomembrane",
+  "cap": "Grand bassin étanché par géomembrane"
+ },
+ {
+  "file": "casier-cet-2.jpg",
+  "cat": "bassins",
+  "alt": "Ouvrage revêtu de géomembrane",
+  "cap": "Ouvrage étanché par géomembrane"
+ },
+ {
+  "file": "talus-geotextile.jpg",
+  "cat": "bassins",
+  "alt": "Ouvriers posant un géotextile sur un grand talus",
+  "cap": "Pose de géotextile sur un grand talus"
+ },
+ {
+  "file": "bassin-geomembrane-talus.jpg",
+  "cat": "bassins",
+  "alt": "Bassin revêtu de géomembrane lestée par des sacs de sable",
+  "cap": "Géomembrane lestée sur talus"
+ },
+ {
+  "file": "lagunage.jpg",
+  "cat": "bassins",
+  "alt": "Grande lagune revêtue de géomembrane",
+  "cap": "Lagune étanchée par géomembrane"
+ },
+ {
+  "file": "lagune-geomembrane.jpg",
+  "cat": "bassins",
+  "alt": "Bassin revêtu de géomembrane avant mise en eau",
+  "cap": "Bassin revêtu de géomembrane avant mise en eau"
+ },
+ {
+  "file": "bassin-geomembrane.jpg",
+  "cat": "bassins",
+  "alt": "Bassin revêtu de géomembrane",
+  "cap": "Bassin revêtu de géomembrane"
+ },
+ {
+  "file": "bassin-geomembrane-angles.jpg",
+  "cat": "bassins",
+  "alt": "Bassin rectangulaire revêtu de géomembrane",
+  "cap": "Bassin rectangulaire revêtu de géomembrane"
+ },
+ {
+  "file": "intervention-geomembrane.jpg",
+  "cat": "bassins",
+  "alt": "Technicien intervenant sur une géomembrane",
+  "cap": "Intervention sur géomembrane"
+ },
+ {
+  "file": "station-irrigation.jpg",
+  "cat": "bassins",
+  "alt": "Station de pompage et de filtration",
+  "cap": "Station de pompage et de filtration pour l’irrigation"
+ },
+ {
+  "file": "conduite-pehd.jpg",
+  "cat": "bassins",
+  "alt": "Raccordement de conduites en PEHD sur chantier",
+  "cap": "Raccordement de conduites PEHD"
+ },
+ {
+  "file": "ouvrage-enterre-pvc.jpg",
+  "cat": "genie",
+  "alt": "Membranes d’étanchéité posées sur un radier et des voiles en béton",
+  "cap": "Étanchéité d’une structure en béton"
+ },
+ {
+  "file": "ouvrage-enterre-pvc-2.jpg",
+  "cat": "genie",
+  "alt": "Membranes d’étanchéité posées sur un grand radier et des voiles",
+  "cap": "Membranes d’étanchéité sur radier et voiles"
+ },
+ {
+  "file": "radier-membrane-pvc.jpg",
+  "cat": "genie",
+  "alt": "Ouvriers posant une membrane d’étanchéité sur un radier",
+  "cap": "Pose de membrane d’étanchéité sur radier"
+ },
+ {
+  "file": "radier-membrane-pvc-2.jpg",
+  "cat": "genie",
+  "alt": "Membrane d’étanchéité posée sur une grande surface",
+  "cap": "Membrane d’étanchéité sur grande surface"
+ },
+ {
+  "file": "fondations-drainage.jpg",
+  "cat": "genie",
+  "alt": "Pose d’une nappe de protection sur un mur de fondation",
+  "cap": "Protection et drainage des fondations"
+ },
+ {
+  "file": "fondations-drainage-2.jpg",
+  "cat": "genie",
+  "alt": "Pose d’une nappe de protection et de drainage sur un mur enterré",
+  "cap": "Protection et drainage d’un mur enterré"
+ },
+ {
+  "file": "drainage-tranchee.jpg",
+  "cat": "genie",
+  "alt": "Tranchée drainante garnie de géotextile et de gravier",
+  "cap": "Tranchée drainante avec géotextile"
+ },
+ {
+  "file": "drain-geotextile.jpg",
+  "cat": "genie",
+  "alt": "Drain enveloppé de géotextile en pied de fondation",
+  "cap": "Drain enveloppé de géotextile"
+ },
+ {
+  "file": "tranchee-geotextile.jpg",
+  "cat": "genie",
+  "alt": "Ouvrier posant un géotextile en tranchée",
+  "cap": "Pose de géotextile en tranchée"
+ },
+ {
+  "file": "stabilisation-talus.jpg",
+  "cat": "genie",
+  "alt": "Mise en place de géocellules sur un talus",
+  "cap": "Stabilisation de talus par géocellules"
+ },
+ {
+  "file": "toiture-terrasse.jpg",
+  "cat": "genie",
+  "alt": "Pose de membranes d’étanchéité sur une toiture-terrasse",
+  "cap": "Étanchéité de toiture-terrasse"
+ },
+ {
+  "file": "toiture-terrasse-2.jpg",
+  "cat": "genie",
+  "alt": "Ouvriers posant des membranes sur une toiture-terrasse",
+  "cap": "Pose de membranes sur toiture-terrasse"
+ },
+ {
+  "file": "bassin-beton-geomembrane.jpg",
+  "cat": "genie",
+  "alt": "Géomembrane posée sur les parois d’un ouvrage en béton",
+  "cap": "Géomembrane sur ouvrage en béton"
+ },
+ {
+  "file": "soudure-geomembrane.jpg",
+  "cat": "controle",
+  "alt": "Technicien soudant une géomembrane",
+  "cap": "Soudure de géomembrane"
+ },
+ {
+  "file": "controle-soudure.jpg",
+  "cat": "controle",
+  "alt": "Techniciens contrôlant une soudure de géomembrane",
+  "cap": "Contrôle d’une soudure sur chantier"
+ },
+ {
+  "file": "essai-soudure.jpg",
+  "cat": "controle",
+  "alt": "Appareil d’essai de traction sur un échantillon de soudure",
+  "cap": "Essai de traction sur échantillon de soudure"
+ },
+ {
+  "file": "soudure-extrusion.jpg",
+  "cat": "controle",
+  "alt": "Techniciens réalisant une soudure par extrusion",
+  "cap": "Soudure par extrusion"
+ },
+ {
+  "file": "soudure-talus.jpg",
+  "cat": "controle",
+  "alt": "Technicien soudant une géomembrane sur un talus",
+  "cap": "Soudure de géomembrane sur talus"
+ },
+ {
+  "file": "soudure-membrane-pvc.jpg",
+  "cat": "controle",
+  "alt": "Techniciens soudant une membrane d’étanchéité",
+  "cap": "Soudure d’une membrane sur chantier"
+ }
+]

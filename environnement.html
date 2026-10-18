@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,102 +26,135 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-      <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="solutions.html" class="is-active">Expertises &amp; solutions</a>
+        <a href="solutions.html" aria-current="page">Expertises &amp; solutions</a>
         <a href="realisations.html">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <img class="bg" src="images/photos/lagunage.jpg" alt="">
+    <section class="page-head">
       <div class="wrap">
         <nav class="crumbs" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><a href="solutions.html">Expertises</a><span aria-hidden="true">/</span><span>Environnement</span></nav>
-        <h1 class="display">Environnement</h1>
-        <p class="tagline-lg">Protection durable des écosystèmes.</p>
-        <p>Étanchéité des ouvrages de stockage et de traitement des déchets et des eaux polluées.</p>
+        <div class="page-head-grid">
+          <div>
+            <span class="label">Secteur 02 / 07</span>
+            <h1 class="h1" style="margin-top:14px">Environnement</h1>
+            <p class="tag">Protection durable des écosystèmes.</p>
+          </div>
+          <p class="intro">Étanchéité des ouvrages de stockage et de traitement des déchets et des eaux polluées.</p>
+        </div>
+        <figure><img class="wide-img" src="images/photos/lagunage.jpg" alt="Grande lagune revêtue de géomembrane"></figure>
+        <dl class="facts" style="margin-top:32px">
+          <div><dt>Enjeu</dt><dd>Protection des sols et des nappes</dd></div>
+          <div><dt>Ouvrages</dt><dd>CET, lixiviats, eaux pluviales, lagunages</dd></div>
+          <div><dt>Matériaux</dt><dd>Géomembranes, géotextiles, drainage, GSB</dd></div>
+          <div><dt>Contrôle</dt><dd>Soudures contrôlées et tracées</dd></div>
+        </dl>
       </div>
     </section>
-
-    <div class="wrap">
-      <dl class="facts">
-        <div><dt>Enjeu</dt><dd>Protection des sols et des nappes</dd></div>
-        <div><dt>Ouvrages</dt><dd>CET, lixiviats, eaux pluviales, lagunages</dd></div>
-        <div><dt>Matériaux</dt><dd>Géomembranes, géotextiles, drainage, GSB</dd></div>
-        <div><dt>Contrôle</dt><dd>Soudures contrôlées et tracées</dd></div>
-      </dl>
-    </div>
 
     <section class="section">
-      <div class="wrap svc-intro">
-        <div class="copy reveal">
-          <span class="eyebrow">Notre intervention</span>
-          <p class="lead">Nous réalisons l’étanchéité des ouvrages qui stockent ou traitent les déchets et les eaux polluées, pour une protection absolue des sols contre les pollutions.</p>
-          <p>Centres d’enfouissement technique, bassins de lixiviats, bassins d’eaux pluviales et lagunes&nbsp;: ces ouvrages exigent une barrière continue et durable entre leur contenu et le milieu naturel.</p>
-          <p>Nous combinons géomembranes, géotextiles, géocomposites de drainage et géosynthétiques bentonitiques pour répondre aux exigences de chaque projet, avec une conformité réglementaire totale.</p>
-        </div>
-        <img class="reveal" src="images/photos/casier-cet.jpg" alt="Grand ouvrage revêtu de géomembrane" loading="lazy">
-      </div>
-    </section>
-
-    <section class="section bg-cream">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Ouvrages traités</span>
-            <h2 class="display">Ce que nous réalisons</h2>
+        <div class="sec-head">
+          <div class="idx"><b>01</b><span class="label">Intervention</span></div>
+          <div class="main">
+            <div><h2 class="h2">Notre intervention</h2></div>
           </div>
         </div>
-        <div class="works">
-          <article class="work reveal">
-            <img src="images/photos/talus-geotextile.jpg" alt="Ouvriers posant un géotextile sur un grand talus" loading="lazy">
-            <div class="body"><span class="num">01</span><h3>Centres d’enfouissement technique (CET)</h3><p>Étanchéité du fond et des flancs des casiers. La barrière associe géomembrane, géotextile de protection et couche de drainage des lixiviats&nbsp;; elle peut être complétée par un géosynthétique bentonitique.</p></div>
+        <div class="intro-grid">
+          <div class="reveal" style="display:grid;gap:24px;align-content:start">
+            <p class="lead">Nous réalisons l’étanchéité des ouvrages qui stockent ou traitent les déchets et les eaux polluées, pour une protection absolue des sols contre les pollutions.</p>
+            <div class="prose">
+              <p>Centres d’enfouissement technique, bassins de lixiviats, bassins d’eaux pluviales et lagunes&nbsp;: ces ouvrages exigent une barrière continue et durable entre leur contenu et le milieu naturel.</p>
+              <p>Nous combinons géomembranes, géotextiles, géocomposites de drainage et géosynthétiques bentonitiques pour répondre aux exigences de chaque projet, avec une conformité réglementaire totale.</p>
+            </div>
+          </div>
+          <figure class="reveal" style="margin:0"><img src="images/photos/casier-cet.jpg" alt="Grand ouvrage revêtu de géomembrane" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="idx"><b>02</b><span class="label">Ouvrages traités</span></div>
+          <div class="main">
+            <div><h2 class="h2">Ce que nous réalisons</h2></div>
+          </div>
+        </div>
+        <div class="rows">
+          <article class="row reveal">
+            <span class="n">01</span>
+            <div class="body">
+              <h3 class="h3">Centres d’enfouissement technique (CET)</h3>
+              <p>Étanchéité du fond et des flancs des casiers. La barrière associe géomembrane, géotextile de protection et couche de drainage des lixiviats&nbsp;; elle peut être complétée par un géosynthétique bentonitique.</p>
+            </div>
+            <figure class="media"><img src="images/photos/talus-geotextile.jpg" alt="Ouvriers posant un géotextile sur un grand talus" loading="lazy"></figure>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/lagune-geomembrane.jpg" alt="Bassin revêtu de géomembrane avant mise en eau" loading="lazy">
-            <div class="body"><span class="num">02</span><h3>Bassins de lixiviats</h3><p>Stockage étanche des lixiviats collectés dans les casiers, avant leur traitement.</p></div>
+          <article class="row reveal">
+            <span class="n">02</span>
+            <div class="body">
+              <h3 class="h3">Bassins de lixiviats</h3>
+              <p>Stockage étanche des lixiviats collectés dans les casiers, avant leur traitement.</p>
+            </div>
+            <figure class="media"><img src="images/photos/lagune-geomembrane.jpg" alt="Bassin revêtu de géomembrane avant mise en eau" loading="lazy"></figure>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/bassin-geomembrane-talus.jpg" alt="Bassin revêtu de géomembrane lestée par des sacs de sable" loading="lazy">
-            <div class="body"><span class="num">03</span><h3>Bassins de rétention d’eaux pluviales</h3><p>Stockage étanche des eaux de ruissellement, avec une géomembrane lestée et ancrée en crête de talus.</p></div>
+          <article class="row reveal">
+            <span class="n">03</span>
+            <div class="body">
+              <h3 class="h3">Bassins de rétention d’eaux pluviales</h3>
+              <p>Stockage étanche des eaux de ruissellement, avec une géomembrane lestée et ancrée en crête de talus.</p>
+            </div>
+            <figure class="media"><img src="images/photos/bassin-geomembrane-talus.jpg" alt="Bassin revêtu de géomembrane lestée par des sacs de sable" loading="lazy"></figure>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/lagunage-geomembrane.jpg" alt="Lagune revêtue de géomembrane" loading="lazy">
-            <div class="body"><span class="num">04</span><h3>Lagunages</h3><p>Étanchéité des lagunes de traitement des eaux usées, pour une protection absolue des sols contre les pollutions.</p></div>
+          <article class="row reveal">
+            <span class="n">04</span>
+            <div class="body">
+              <h3 class="h3">Lagunages</h3>
+              <p>Étanchéité des lagunes de traitement des eaux usées, pour une protection absolue des sols contre les pollutions.</p>
+            </div>
+            <figure class="media"><img src="images/photos/lagunage-geomembrane.jpg" alt="Lagune revêtue de géomembrane" loading="lazy"></figure>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section on-dark">
-      <div class="wrap system">
-        <div class="copy reveal">
-          <span class="eyebrow">Le système</span>
-          <h2 class="display" style="font-size:clamp(28px,3vw,40px)">Le complexe d’étanchéité d’un fond de casier</h2>
-          <p>La composition est définie selon la conception du projet et la réglementation applicable. Un fond de casier associe généralement, de haut en bas&nbsp;:</p>
-          <p class="note">Sur les flancs, un géocomposite de drainage peut remplacer la couche drainante granulaire.</p>
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="idx"><b>03</b><span class="label">Le système</span></div>
+          <div class="main">
+            <div><h2 class="h2">Le complexe d’étanchéité d’un fond de casier</h2></div>
+          </div>
         </div>
-        <ol class="layers-list reveal">
-          <li>Couche drainante de collecte des lixiviats</li>
-          <li>Géotextile de protection</li>
-          <li>Géomembrane PEHD soudée</li>
-          <li>Géosynthétique bentonitique (GSB), selon conception</li>
-          <li>Support compacté</li>
-        </ol>
+        <div class="system">
+          <div class="prose reveal">
+            <p>La composition est définie selon la conception du projet et la réglementation applicable. Un fond de casier associe généralement, de haut en bas&nbsp;:</p>
+            <p class="note">Sur les flancs, un géocomposite de drainage peut remplacer la couche drainante granulaire.</p>
+          </div>
+          <ol class="layers reveal">
+            <li><span class="sw k-drain" aria-hidden="true"></span><span class="tx"><small>Couche 01</small>Couche drainante de collecte des lixiviats</span></li>
+            <li><span class="sw k-geotex" aria-hidden="true"></span><span class="tx"><small>Couche 02</small>Géotextile de protection</span></li>
+            <li><span class="sw k-membrane" aria-hidden="true"></span><span class="tx"><small>Couche 03</small>Géomembrane PEHD soudée</span></li>
+            <li><span class="sw k-gsb" aria-hidden="true"></span><span class="tx"><small>Couche 04</small>Géosynthétique bentonitique (GSB), selon conception</span></li>
+            <li><span class="sw k-support" aria-hidden="true"></span><span class="tx"><small>Couche 05</small>Support compacté</span></li>
+          </ol>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Notre démarche</span>
-            <h2 class="display">De l’étude à la réception</h2>
+        <div class="sec-head">
+          <div class="idx"><b>04</b><span class="label">Démarche</span></div>
+          <div class="main">
+            <div><h2 class="h2">De l’étude à la réception</h2></div>
           </div>
         </div>
         <ol class="steps">
@@ -130,8 +163,8 @@
           <li class="reveal"><strong>Pose</strong><span>Mise en œuvre couche par couche, du support à la protection.</span></li>
           <li class="reveal"><strong>Contrôle</strong><span>Contrôle des soudures et traçabilité complète des travaux.</span></li>
         </ol>
-        <div style="margin-top:48px;display:flex;flex-direction:column;gap:16px">
-          <span class="eyebrow">Matériaux mis en œuvre</span>
+        <div style="margin-top:56px;display:grid;gap:16px">
+          <span class="label">Matériaux mis en œuvre</span>
           <div class="mat-links">
             <a href="solutions.html#materiaux">Géomembranes</a>
             <a href="solutions.html#materiaux">Géotextiles</a>
@@ -142,52 +175,51 @@
       </div>
     </section>
 
-    <section class="section bg-cream">
+    <section class="section section-alt">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Normes &amp; engagements qualité</span>
-            <h2 class="display">Une exigence à chaque étape</h2>
+        <div class="sec-head">
+          <div class="idx"><b>05</b><span class="label">Qualité</span></div>
+          <div class="main">
+            <div><h2 class="h2">Normes &amp; engagements qualité</h2></div>
           </div>
         </div>
-        <ul class="checklist">
-          <li class="reveal"><strong>Résistance chimique certifiée</strong><span>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</span></li>
-          <li class="reveal"><strong>Soudure haute technologie</strong><span>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</span></li>
-          <li class="reveal"><strong>Sécurité industrielle</strong><span>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</span></li>
-        </ul>
+        <div class="cols-3">
+          <article class="reveal"><h3 class="h3">Résistance chimique certifiée</h3><p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p></article>
+          <article class="reveal"><h3 class="h3">Soudure haute technologie</h3><p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p></article>
+          <article class="reveal"><h3 class="h3">Sécurité industrielle</h3><p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p></article>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">En images</span>
-            <h2 class="display">Nos chantiers</h2>
+        <div class="sec-head">
+          <div class="idx"><b>06</b><span class="label">En images</span></div>
+          <div class="main">
+            <div><h2 class="h2">Nos chantiers</h2></div>
+            <a class="link" href="realisations.html">Toutes nos réalisations</a>
           </div>
-          <a class="link-more" href="realisations.html">Toutes nos réalisations →</a>
         </div>
-        <div class="gallery">
+        <div class="masonry">
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/casier-cet-2.jpg" alt="Ouvrage étanché par géomembrane" loading="lazy"></a><figcaption>Ouvrage étanché par géomembrane</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/bassin-geomembrane.jpg" alt="Bassin revêtu de géomembrane" loading="lazy"></a><figcaption>Bassin revêtu de géomembrane</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/bassin-geomembrane-angles.jpg" alt="Bassin rectangulaire revêtu de géomembrane" loading="lazy"></a><figcaption>Bassin rectangulaire revêtu de géomembrane</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/intervention-geomembrane.jpg" alt="Intervention sur géomembrane" loading="lazy"></a><figcaption>Intervention sur géomembrane</figcaption></figure>
-          <figure class="reveal"><a href="realisations.html"><img src="images/photos/lagunage.jpg" alt="Lagune étanchée par géomembrane" loading="lazy"></a><figcaption>Lagune étanchée par géomembrane</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/soudure-talus.jpg" alt="Soudure de géomembrane sur talus" loading="lazy"></a><figcaption>Soudure de géomembrane sur talus</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section on-dark">
+    <section class="section section-dark">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Sur le terrain</span>
-            <h2 class="display">Nos équipes en vidéo</h2>
+        <div class="sec-head">
+          <div class="idx"><b>07</b><span class="label">Sur le terrain</span></div>
+          <div class="main">
+            <div><h2 class="h2">Nos équipes <em>en vidéo</em></h2></div>
+            <a class="link" href="realisations.html#videos">Toutes les vidéos</a>
           </div>
-          <a class="link-more" href="realisations.html#videos">Toutes les vidéos →</a>
         </div>
-        <div class="reels-land two" style="margin-top:0">
+        <div class="reels-land two flush">
           <figure class="reel reveal">
             <video data-autoplay muted loop playsinline preload="none" poster="videos/talus-geotextile-geomembrane.jpg" aria-label="Géotextile et géomembrane sur talus">
               <source src="videos/talus-geotextile-geomembrane.mp4" type="video/mp4">
@@ -204,27 +236,33 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <img class="bg" src="images/photos/casier-cet.jpg" alt="" loading="lazy">
+    <section class="cta">
       <div class="wrap">
-        <div>
-          <h2 class="display">Un projet dans le secteur de l’environnement&nbsp;?</h2>
+        <div class="copy">
+          <span class="label">Contact</span>
+          <h2 class="h2">Un projet environnemental&nbsp;?</h2>
           <p>Décrivez-nous votre ouvrage&nbsp;: nous vous proposons la solution technique adaptée.</p>
+          <div class="actions">
+            <a class="btn btn-orange" href="contact.html?secteur=Environnement#devis">Demander un devis</a>
+            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
+          </div>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-accent btn-lg" href="contact.html?secteur=Environnement#devis">Demander un devis</a>
-          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
+        <div class="contact-lines">
+          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
+          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
+          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
         </div>
       </div>
     </section>
 
-    <nav class="pager" aria-label="Autres secteurs">
+    <nav class="wrap pager" aria-label="Autres secteurs">
       <a href="industrie-petrole.html"><span>← Secteur précédent</span><strong>Industrie &amp; Pétrole</strong></a>
       <a href="genie-civil.html"><span>Secteur suivant →</span><strong>Génie civil</strong></a>
     </nav>
   </main>
 
   <footer class="site-footer">
+    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -262,7 +300,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
 
   <script src="js/main.js"></script>
 </body>

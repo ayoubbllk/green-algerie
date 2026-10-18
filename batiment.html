@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,102 +26,135 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-      <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="solutions.html" class="is-active">Expertises &amp; solutions</a>
+        <a href="solutions.html" aria-current="page">Expertises &amp; solutions</a>
         <a href="realisations.html">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <img class="bg" src="images/photos/toiture-terrasse.jpg" alt="">
+    <section class="page-head">
       <div class="wrap">
         <nav class="crumbs" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><a href="solutions.html">Expertises</a><span aria-hidden="true">/</span><span>Bâtiment</span></nav>
-        <h1 class="display">Bâtiment</h1>
-        <p class="tagline-lg">Étanchéité de toitures-terrasses techniques.</p>
-        <p>Solutions d’étanchéité de toitures-terrasses techniques et d’ouvrages industriels.</p>
+        <div class="page-head-grid">
+          <div>
+            <span class="label">Secteur 06 / 07</span>
+            <h1 class="h1" style="margin-top:14px">Bâtiment</h1>
+            <p class="tag">Étanchéité de toitures-terrasses techniques.</p>
+          </div>
+          <p class="intro">Solutions d’étanchéité de toitures-terrasses techniques et d’ouvrages industriels.</p>
+        </div>
+        <figure><img class="wide-img" src="images/photos/toiture-terrasse.jpg" alt="Pose de membranes d’étanchéité sur une toiture-terrasse"></figure>
+        <dl class="facts" style="margin-top:32px">
+          <div><dt>Enjeu</dt><dd>Des toitures durablement étanches</dd></div>
+          <div><dt>Ouvrages</dt><dd>Toitures-terrasses techniques, ouvrages industriels</dd></div>
+          <div><dt>Matériaux</dt><dd>Membranes bitumineuses et synthétiques</dd></div>
+          <div><dt>Contrôle</dt><dd>Soudures et recouvrements vérifiés</dd></div>
+        </dl>
       </div>
     </section>
-
-    <div class="wrap">
-      <dl class="facts">
-        <div><dt>Enjeu</dt><dd>Des toitures durablement étanches</dd></div>
-        <div><dt>Ouvrages</dt><dd>Toitures-terrasses techniques, ouvrages industriels</dd></div>
-        <div><dt>Matériaux</dt><dd>Membranes bitumineuses et synthétiques</dd></div>
-        <div><dt>Contrôle</dt><dd>Soudures et recouvrements vérifiés</dd></div>
-      </dl>
-    </div>
 
     <section class="section">
-      <div class="wrap svc-intro">
-        <div class="copy reveal">
-          <span class="eyebrow">Notre intervention</span>
-          <p class="lead">Nous proposons des solutions d’étanchéité de toitures-terrasses techniques et d’ouvrages industriels.</p>
-          <p>Une toiture-terrasse technique supporte des équipements, des passages et de nombreuses traversées. Son étanchéité doit rester continue sur toute la surface, jusqu’aux relevés et aux points singuliers.</p>
-          <p>Selon l’ouvrage, nous mettons en œuvre des membranes bitumineuses ou des membranes synthétiques soudées.</p>
-        </div>
-        <img class="reveal" src="images/photos/toiture-terrasse-2.jpg" alt="Ouvriers posant des membranes sur une toiture-terrasse" loading="lazy">
-      </div>
-    </section>
-
-    <section class="section bg-cream">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Ouvrages traités</span>
-            <h2 class="display">Ce que nous réalisons</h2>
+        <div class="sec-head">
+          <div class="idx"><b>01</b><span class="label">Intervention</span></div>
+          <div class="main">
+            <div><h2 class="h2">Notre intervention</h2></div>
           </div>
         </div>
-        <div class="works">
-          <article class="work reveal">
-            <img src="images/photos/toiture-terrasse.jpg" alt="Pose de membranes d’étanchéité sur une toiture-terrasse" loading="lazy">
-            <div class="body"><span class="num">01</span><h3>Toitures-terrasses techniques</h3><p>Étanchéité des toitures qui accueillent des équipements techniques, avec traitement des relevés, des évacuations d’eaux pluviales et des traversées.</p></div>
+        <div class="intro-grid">
+          <div class="reveal" style="display:grid;gap:24px;align-content:start">
+            <p class="lead">Nous proposons des solutions d’étanchéité de toitures-terrasses techniques et d’ouvrages industriels.</p>
+            <div class="prose">
+              <p>Une toiture-terrasse technique supporte des équipements, des passages et de nombreuses traversées. Son étanchéité doit rester continue sur toute la surface, jusqu’aux relevés et aux points singuliers.</p>
+              <p>Selon l’ouvrage, nous mettons en œuvre des membranes bitumineuses ou des membranes synthétiques soudées.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="idx"><b>02</b><span class="label">Ouvrages traités</span></div>
+          <div class="main">
+            <div><h2 class="h2">Ce que nous réalisons</h2></div>
+          </div>
+        </div>
+        <div class="rows">
+          <article class="row reveal">
+            <span class="n">01</span>
+            <div class="body">
+              <h3 class="h3">Toitures-terrasses techniques</h3>
+              <p>Étanchéité des toitures qui accueillent des équipements techniques, avec traitement des relevés, des évacuations d’eaux pluviales et des traversées.</p>
+            </div>
+            <figure class="media"><img src="images/photos/toiture-terrasse-2.jpg" alt="Ouvriers posant des membranes sur une toiture-terrasse" loading="lazy"></figure>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/toiture-terrasse-2.jpg" alt="Ouvriers posant des membranes bitumineuses sur une toiture-terrasse" loading="lazy">
-            <div class="body"><span class="num">02</span><h3>Membranes bitumineuses</h3><p>Pose de membranes bitumineuses en lés, assemblées par recouvrement et soudure à la flamme.</p></div>
+          <article class="row reveal">
+            <span class="n">02</span>
+            <div class="body">
+              <h3 class="h3">Membranes bitumineuses</h3>
+              <p>Pose de membranes bitumineuses en lés, assemblées par recouvrement et soudure à la flamme.</p>
+            </div>
+            <div class="media icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#1E5B39" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="3"/><path d="M7 5h11a3 3 0 0 1 0 6H7"/><path d="M4 8v11h17"/></svg></div>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/soudure-membrane-pvc.jpg" alt="Techniciens soudant une membrane d’étanchéité" loading="lazy">
-            <div class="body"><span class="num">03</span><h3>Membranes synthétiques</h3><p>Membranes synthétiques soudées à l’air chaud, avec contrôle des soudures sur toute leur longueur.</p></div>
+          <article class="row reveal">
+            <span class="n">03</span>
+            <div class="body">
+              <h3 class="h3">Membranes synthétiques</h3>
+              <p>Membranes synthétiques soudées à l’air chaud, avec contrôle des soudures sur toute leur longueur.</p>
+            </div>
+            <figure class="media"><img src="images/photos/soudure-membrane-pvc.jpg" alt="Techniciens soudant une membrane d’étanchéité" loading="lazy"></figure>
           </article>
-          <article class="work reveal">
-            <img src="images/photos/bassin-beton-geomembrane.jpg" alt="Géomembrane posée sur les parois d’un ouvrage en béton" loading="lazy">
-            <div class="body"><span class="num">04</span><h3>Ouvrages industriels</h3><p>Étanchéité d’ouvrages en béton en site industriel.</p></div>
+          <article class="row reveal">
+            <span class="n">04</span>
+            <div class="body">
+              <h3 class="h3">Ouvrages industriels</h3>
+              <p>Étanchéité d’ouvrages en béton en site industriel.</p>
+            </div>
+            <figure class="media"><img src="images/photos/bassin-beton-geomembrane.jpg" alt="Géomembrane posée sur les parois d’un ouvrage en béton" loading="lazy"></figure>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section on-dark">
-      <div class="wrap system">
-        <div class="copy reveal">
-          <span class="eyebrow">Le système</span>
-          <h2 class="display" style="font-size:clamp(28px,3vw,40px)">La composition d’une toiture-terrasse</h2>
-          <p>La composition dépend de l’usage de la toiture et de la conception du bâtiment. Une toiture-terrasse comprend généralement, de haut en bas&nbsp;:</p>
-          <p class="note">Les relevés, les évacuations et les traversées font l’objet d’un traitement spécifique.</p>
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="idx"><b>03</b><span class="label">Le système</span></div>
+          <div class="main">
+            <div><h2 class="h2">La composition d’une toiture-terrasse</h2></div>
+          </div>
         </div>
-        <ol class="layers-list reveal">
-          <li>Protection, selon l’usage de la toiture</li>
-          <li>Membrane d’étanchéité</li>
-          <li>Isolant thermique, selon conception</li>
-          <li>Pare-vapeur</li>
-          <li>Élément porteur</li>
-        </ol>
+        <div class="system">
+          <div class="prose reveal">
+            <p>La composition dépend de l’usage de la toiture et de la conception du bâtiment. Une toiture-terrasse comprend généralement, de haut en bas&nbsp;:</p>
+            <p class="note">Les relevés, les évacuations et les traversées font l’objet d’un traitement spécifique.</p>
+          </div>
+          <ol class="layers reveal">
+            <li><span class="sw k-protect" aria-hidden="true"></span><span class="tx"><small>Couche 01</small>Protection, selon l’usage de la toiture</span></li>
+            <li><span class="sw k-membrane" aria-hidden="true"></span><span class="tx"><small>Couche 02</small>Membrane d’étanchéité</span></li>
+            <li><span class="sw k-insul" aria-hidden="true"></span><span class="tx"><small>Couche 03</small>Isolant thermique, selon conception</span></li>
+            <li><span class="sw k-vapour" aria-hidden="true"></span><span class="tx"><small>Couche 04</small>Pare-vapeur</span></li>
+            <li><span class="sw k-concrete" aria-hidden="true"></span><span class="tx"><small>Couche 05</small>Élément porteur</span></li>
+          </ol>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Notre démarche</span>
-            <h2 class="display">De l’étude à la réception</h2>
+        <div class="sec-head">
+          <div class="idx"><b>04</b><span class="label">Démarche</span></div>
+          <div class="main">
+            <div><h2 class="h2">De l’étude à la réception</h2></div>
           </div>
         </div>
         <ol class="steps">
@@ -130,8 +163,8 @@
           <li class="reveal"><strong>Pose</strong><span>Préparation du support, pose des membranes et des relevés.</span></li>
           <li class="reveal"><strong>Contrôle</strong><span>Vérification des soudures et des recouvrements.</span></li>
         </ol>
-        <div style="margin-top:48px;display:flex;flex-direction:column;gap:16px">
-          <span class="eyebrow">Matériaux mis en œuvre</span>
+        <div style="margin-top:56px;display:grid;gap:16px">
+          <span class="label">Matériaux mis en œuvre</span>
           <div class="mat-links">
             <a href="solutions.html#materiaux">Géomembranes</a>
             <a href="solutions.html#materiaux">Géotextiles</a>
@@ -140,43 +173,49 @@
       </div>
     </section>
 
-    <section class="section bg-cream">
+    <section class="section section-alt">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Normes &amp; engagements qualité</span>
-            <h2 class="display">Une exigence à chaque étape</h2>
+        <div class="sec-head">
+          <div class="idx"><b>05</b><span class="label">Qualité</span></div>
+          <div class="main">
+            <div><h2 class="h2">Normes &amp; engagements qualité</h2></div>
           </div>
         </div>
-        <ul class="checklist">
-          <li class="reveal"><strong>Résistance chimique certifiée</strong><span>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</span></li>
-          <li class="reveal"><strong>Soudure haute technologie</strong><span>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</span></li>
-          <li class="reveal"><strong>Sécurité industrielle</strong><span>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</span></li>
-        </ul>
+        <div class="cols-3">
+          <article class="reveal"><h3 class="h3">Résistance chimique certifiée</h3><p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p></article>
+          <article class="reveal"><h3 class="h3">Soudure haute technologie</h3><p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p></article>
+          <article class="reveal"><h3 class="h3">Sécurité industrielle</h3><p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="cta-band">
-      <img class="bg" src="images/photos/toiture-terrasse-2.jpg" alt="" loading="lazy">
+    <section class="cta">
       <div class="wrap">
-        <div>
-          <h2 class="display">Un projet dans le secteur du bâtiment&nbsp;?</h2>
+        <div class="copy">
+          <span class="label">Contact</span>
+          <h2 class="h2">Un projet de bâtiment&nbsp;?</h2>
           <p>Décrivez-nous votre ouvrage&nbsp;: nous vous proposons la solution technique adaptée.</p>
+          <div class="actions">
+            <a class="btn btn-orange" href="contact.html?secteur=B%C3%A2timent#devis">Demander un devis</a>
+            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
+          </div>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-accent btn-lg" href="contact.html?secteur=B%C3%A2timent#devis">Demander un devis</a>
-          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
+        <div class="contact-lines">
+          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
+          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
+          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
         </div>
       </div>
     </section>
 
-    <nav class="pager" aria-label="Autres secteurs">
+    <nav class="wrap pager" aria-label="Autres secteurs">
       <a href="agriculture.html"><span>← Secteur précédent</span><strong>Agriculture</strong></a>
       <a href="ouvrages-art.html"><span>Secteur suivant →</span><strong>Ouvrages d’art</strong></a>
     </nav>
   </main>
 
   <footer class="site-footer">
+    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -214,7 +253,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
 
   <script src="js/main.js"></script>
 </body>
