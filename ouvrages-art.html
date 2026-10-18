@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,134 +26,99 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-      <nav class="nav" id="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="solutions.html" aria-current="page">Expertises &amp; solutions</a>
+        <a href="solutions.html" class="is-active">Expertises &amp; solutions</a>
         <a href="realisations.html">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-head">
+    <section class="page-hero">
+      <img class="bg" src="images/photos/ouvrage-enterre-pvc.jpg" alt="">
       <div class="wrap">
         <nav class="crumbs" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><a href="solutions.html">Expertises</a><span aria-hidden="true">/</span><span>Ouvrages d’art</span></nav>
-        <div class="page-head-grid">
+        <h1 class="display">Ouvrages d’art</h1>
+        <p class="tagline-lg">Protection des structures d’envergure.</p>
+        <p>Étanchéité des ponts, des tunnels, des viaducs et des murs de soutènement.</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Enjeu</dt><dd>Protection contre les infiltrations</dd></div>
+        <div><dt>Ouvrages</dt><dd>Ponts, tunnels, viaducs, murs de soutènement</dd></div>
+        <div><dt>Matériaux</dt><dd>Membranes, géotextiles, drainage</dd></div>
+        <div><dt>Contrôle</dt><dd>Soudures et points singuliers contrôlés</dd></div>
+      </dl>
+    </div>
+
+    <section class="section">
+      <div class="wrap svc-intro">
+        <div class="copy reveal">
+          <span class="eyebrow">Notre intervention</span>
+          <p class="lead">Nous assurons l’étanchéité des ponts, des tunnels, des viaducs et des murs de soutènement, pour protéger durablement ces structures d’envergure.</p>
+          <p>Les infiltrations d’eau dégradent le béton et corrodent les armatures. Sur un ouvrage d’art, l’étanchéité conditionne directement la durée de vie de la structure.</p>
+          <p>Nous associons membranes d’étanchéité, géotextiles de protection et drainage, avec un soin particulier apporté aux joints et aux points singuliers.</p>
+        </div>
+        <img class="reveal" src="images/photos/ouvrage-enterre-pvc-2.jpg" alt="Membranes d’étanchéité posées sur un grand radier et des voiles" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section bg-cream">
+      <div class="wrap">
+        <div class="section-head">
           <div>
-            <span class="label">Secteur 07 / 07</span>
-            <h1 class="h1" style="margin-top:14px">Ouvrages d’art</h1>
-            <p class="tag">Protection des structures d’envergure.</p>
+            <span class="eyebrow">Ouvrages traités</span>
+            <h2 class="display">Ce que nous réalisons</h2>
           </div>
-          <p class="intro">Étanchéité des ponts, des tunnels, des viaducs et des murs de soutènement.</p>
         </div>
-        <figure><img class="wide-img" src="images/photos/radier-membrane-pvc.jpg" alt="Ouvriers posant une membrane d’étanchéité sur un radier"></figure>
-        <dl class="facts" style="margin-top:32px">
-          <div><dt>Enjeu</dt><dd>Protection contre les infiltrations</dd></div>
-          <div><dt>Ouvrages</dt><dd>Ponts, tunnels, viaducs, murs de soutènement</dd></div>
-          <div><dt>Matériaux</dt><dd>Membranes, géotextiles, drainage</dd></div>
-          <div><dt>Contrôle</dt><dd>Soudures et points singuliers contrôlés</dd></div>
-        </dl>
+        <div class="works">
+          <article class="work no-img reveal">
+            <div class="body"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B6B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h20"/><path d="M4 8v12M20 8v12"/><path d="M4 16a8 7 0 0 1 16 0"/></svg></span><span class="num">01</span><h3>Ponts et viaducs</h3><p>Étanchéité des tabliers, qui protège le béton et les armatures des infiltrations d’eau.</p></div>
+          </article>
+          <article class="work reveal">
+            <img src="images/photos/ouvrage-enterre-pvc.jpg" alt="Membranes d’étanchéité posées sur une structure en béton" loading="lazy">
+            <div class="body"><span class="num">02</span><h3>Tunnels</h3><p>Étanchéité par membranes synthétiques entre le soutènement et le revêtement définitif, associée à un géotextile de protection et au drainage.</p></div>
+          </article>
+          <article class="work reveal">
+            <img src="images/photos/fondations-drainage-2.jpg" alt="Pose d’une nappe de protection et de drainage sur un mur enterré" loading="lazy">
+            <div class="body"><span class="num">03</span><h3>Murs de soutènement</h3><p>Étanchéité et drainage de la face arrière des murs, pour évacuer les eaux et protéger la structure.</p></div>
+          </article>
+          <article class="work no-img reveal">
+            <div class="body"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B6B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/><path d="M12 6v12"/></svg></span><span class="num">04</span><h3>Joints et points singuliers</h3><p>Traitement des joints, des reprises de bétonnage et des traversées, zones les plus exposées aux infiltrations.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-dark">
+      <div class="wrap system">
+        <div class="copy reveal">
+          <span class="eyebrow">Le système</span>
+          <h2 class="display" style="font-size:clamp(28px,3vw,40px)">L’étanchéité d’un tunnel</h2>
+          <p>Le principe est adapté à chaque ouvrage. Entre le terrain et l’intérieur du tunnel, on trouve généralement&nbsp;:</p>
+          <p class="note">Les eaux collectées par le géotextile sont conduites vers les drains longitudinaux.</p>
+        </div>
+        <ol class="layers-list reveal">
+          <li>Soutènement</li>
+          <li>Géotextile de protection et de drainage</li>
+          <li>Membrane d’étanchéité synthétique</li>
+          <li>Revêtement définitif en béton</li>
+        </ol>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>01</b><span class="label">Intervention</span></div>
-          <div class="main">
-            <div><h2 class="h2">Notre intervention</h2></div>
-          </div>
-        </div>
-        <div class="intro-grid">
-          <div class="reveal" style="display:grid;gap:24px;align-content:start">
-            <p class="lead">Nous assurons l’étanchéité des ponts, des tunnels, des viaducs et des murs de soutènement, pour protéger durablement ces structures d’envergure.</p>
-            <div class="prose">
-              <p>Les infiltrations d’eau dégradent le béton et corrodent les armatures. Sur un ouvrage d’art, l’étanchéité conditionne directement la durée de vie de la structure.</p>
-              <p>Nous associons membranes d’étanchéité, géotextiles de protection et drainage, avec un soin particulier apporté aux joints et aux points singuliers.</p>
-            </div>
-          </div>
-          <figure class="reveal" style="margin:0"><img src="images/photos/ouvrage-enterre-pvc-2.jpg" alt="Membranes d’étanchéité posées sur un grand radier et des voiles" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover"></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>02</b><span class="label">Ouvrages traités</span></div>
-          <div class="main">
-            <div><h2 class="h2">Ce que nous réalisons</h2></div>
-          </div>
-        </div>
-        <div class="rows">
-          <article class="row reveal">
-            <span class="n">01</span>
-            <div class="body">
-              <h3 class="h3">Ponts et viaducs</h3>
-              <p>Étanchéité des tabliers, qui protège le béton et les armatures des infiltrations d’eau.</p>
-            </div>
-            <div class="media icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#1E5B39" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h20"/><path d="M4 8v12M20 8v12"/><path d="M4 16a8 7 0 0 1 16 0"/></svg></div>
-          </article>
-          <article class="row reveal">
-            <span class="n">02</span>
-            <div class="body">
-              <h3 class="h3">Tunnels</h3>
-              <p>Étanchéité par membranes synthétiques entre le soutènement et le revêtement définitif, associée à un géotextile de protection et au drainage.</p>
-            </div>
-            <figure class="media"><img src="images/photos/ouvrage-enterre-pvc.jpg" alt="Membranes d’étanchéité posées sur une structure en béton" loading="lazy"></figure>
-          </article>
-          <article class="row reveal">
-            <span class="n">03</span>
-            <div class="body">
-              <h3 class="h3">Murs de soutènement</h3>
-              <p>Étanchéité et drainage de la face arrière des murs, pour évacuer les eaux et protéger la structure.</p>
-            </div>
-            <figure class="media"><img src="images/photos/fondations-drainage-2.jpg" alt="Pose d’une nappe de protection et de drainage sur un mur enterré" loading="lazy"></figure>
-          </article>
-          <article class="row reveal">
-            <span class="n">04</span>
-            <div class="body">
-              <h3 class="h3">Joints et points singuliers</h3>
-              <p>Traitement des joints, des reprises de bétonnage et des traversées, zones les plus exposées aux infiltrations.</p>
-            </div>
-            <div class="media icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#1E5B39" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/><path d="M12 6v12"/></svg></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>03</b><span class="label">Le système</span></div>
-          <div class="main">
-            <div><h2 class="h2">L’étanchéité d’un tunnel</h2></div>
-          </div>
-        </div>
-        <div class="system">
-          <div class="prose reveal">
-            <p>Le principe est adapté à chaque ouvrage. Entre le terrain et l’intérieur du tunnel, on trouve généralement&nbsp;:</p>
-            <p class="note">Les eaux collectées par le géotextile sont conduites vers les drains longitudinaux.</p>
-          </div>
-          <ol class="layers reveal">
-            <li><span class="sw k-concrete" aria-hidden="true"></span><span class="tx"><small>Couche 01</small>Soutènement</span></li>
-            <li><span class="sw k-geotex" aria-hidden="true"></span><span class="tx"><small>Couche 02</small>Géotextile de protection et de drainage</span></li>
-            <li><span class="sw k-membrane" aria-hidden="true"></span><span class="tx"><small>Couche 03</small>Membrane d’étanchéité synthétique</span></li>
-            <li><span class="sw k-concrete" aria-hidden="true"></span><span class="tx"><small>Couche 04</small>Revêtement définitif en béton</span></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>04</b><span class="label">Démarche</span></div>
-          <div class="main">
-            <div><h2 class="h2">De l’étude à la réception</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Notre démarche</span>
+            <h2 class="display">De l’étude à la réception</h2>
           </div>
         </div>
         <ol class="steps">
@@ -162,8 +127,8 @@
           <li class="reveal"><strong>Mise en œuvre</strong><span>Pose, soudure et traitement des points singuliers.</span></li>
           <li class="reveal"><strong>Contrôle</strong><span>Contrôle des soudures et traçabilité complète.</span></li>
         </ol>
-        <div style="margin-top:56px;display:grid;gap:16px">
-          <span class="label">Matériaux mis en œuvre</span>
+        <div style="margin-top:48px;display:flex;flex-direction:column;gap:16px">
+          <span class="eyebrow">Matériaux mis en œuvre</span>
           <div class="mat-links">
             <a href="solutions.html#materiaux">Géomembranes</a>
             <a href="solutions.html#materiaux">Géotextiles</a>
@@ -173,65 +138,60 @@
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section bg-cream">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>05</b><span class="label">Qualité</span></div>
-          <div class="main">
-            <div><h2 class="h2">Normes &amp; engagements qualité</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Normes &amp; engagements qualité</span>
+            <h2 class="display">Une exigence à chaque étape</h2>
           </div>
         </div>
-        <div class="cols-3">
-          <article class="reveal"><h3 class="h3">Résistance chimique certifiée</h3><p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p></article>
-          <article class="reveal"><h3 class="h3">Soudure haute technologie</h3><p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p></article>
-          <article class="reveal"><h3 class="h3">Sécurité industrielle</h3><p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p></article>
-        </div>
+        <ul class="checklist">
+          <li class="reveal"><strong>Résistance chimique certifiée</strong><span>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</span></li>
+          <li class="reveal"><strong>Soudure haute technologie</strong><span>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</span></li>
+          <li class="reveal"><strong>Sécurité industrielle</strong><span>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</span></li>
+        </ul>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>06</b><span class="label">En images</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nos chantiers</h2></div>
-            <a class="link" href="realisations.html">Toutes nos réalisations</a>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">En images</span>
+            <h2 class="display">Nos chantiers</h2>
           </div>
+          <a class="link-more" href="realisations.html">Toutes nos réalisations →</a>
         </div>
-        <div class="masonry">
+        <div class="gallery">
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/radier-membrane-pvc.jpg" alt="Pose de membrane d’étanchéité sur radier" loading="lazy"></a><figcaption>Pose de membrane d’étanchéité sur radier</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/radier-membrane-pvc-2.jpg" alt="Membrane d’étanchéité sur grande surface" loading="lazy"></a><figcaption>Membrane d’étanchéité sur grande surface</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/fondations-drainage.jpg" alt="Protection et drainage des fondations" loading="lazy"></a><figcaption>Protection et drainage des fondations</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta-band">
+      <img class="bg" src="images/photos/ouvrage-enterre-pvc-2.jpg" alt="" loading="lazy">
       <div class="wrap">
-        <div class="copy">
-          <span class="label">Contact</span>
-          <h2 class="h2">Un projet d’ouvrage d’art&nbsp;?</h2>
+        <div>
+          <h2 class="display">Un projet dans le secteur des ouvrages d’art&nbsp;?</h2>
           <p>Décrivez-nous votre ouvrage&nbsp;: nous vous proposons la solution technique adaptée.</p>
-          <div class="actions">
-            <a class="btn btn-orange" href="contact.html?secteur=Ouvrages%20d%E2%80%99art#devis">Demander un devis</a>
-            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
-          </div>
         </div>
-        <div class="contact-lines">
-          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
-          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
-          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
+        <div class="cta-actions">
+          <a class="btn btn-accent btn-lg" href="contact.html?secteur=Ouvrages%20d%E2%80%99art#devis">Demander un devis</a>
+          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
         </div>
       </div>
     </section>
 
-    <nav class="wrap pager" aria-label="Autres secteurs">
+    <nav class="pager" aria-label="Autres secteurs">
       <a href="batiment.html"><span>← Secteur précédent</span><strong>Bâtiment</strong></a>
       <a href="industrie-petrole.html"><span>Secteur suivant →</span><strong>Industrie &amp; Pétrole</strong></a>
     </nav>
   </main>
 
   <footer class="site-footer">
-    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -269,7 +229,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
 
   <script src="js/main.js"></script>
 </body>

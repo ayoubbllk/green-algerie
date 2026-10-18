@@ -8,11 +8,37 @@
     toggle.addEventListener("click", function () {
       const open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      toggle.textContent = open ? "Fermer" : "Menu";
     });
   }
 
   const canObserve = "IntersectionObserver" in window;
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // En-tête compact au défilement
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const onScroll = function () {
+      header.classList.toggle("is-scrolled", window.scrollY > 40);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Diaporama de l'accueil
+  const slides = document.querySelectorAll(".hero-slides .bg");
+  const dots = document.querySelectorAll(".hero-dots i");
+  const capText = document.querySelector(".hero-cap-text");
+  if (slides.length > 1 && !reduceMotion) {
+    let current = 0;
+    setInterval(function () {
+      slides[current].classList.remove("is-active");
+      if (dots[current]) dots[current].classList.remove("is-active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("is-active");
+      if (dots[current]) dots[current].classList.add("is-active");
+      if (capText) capText.textContent = slides[current].getAttribute("data-caption");
+    }, 6000);
+  }
 
   // Apparition au défilement
   const reveals = document.querySelectorAll(".reveal");

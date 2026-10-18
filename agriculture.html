@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,133 +26,100 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-      <nav class="nav" id="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="solutions.html" aria-current="page">Expertises &amp; solutions</a>
+        <a href="solutions.html" class="is-active">Expertises &amp; solutions</a>
         <a href="realisations.html">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-head">
+    <section class="page-hero">
+      <img class="bg" src="images/photos/retenue-eau-irrigation.jpg" alt="">
       <div class="wrap">
         <nav class="crumbs" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><a href="solutions.html">Expertises</a><span aria-hidden="true">/</span><span>Agriculture</span></nav>
-        <div class="page-head-grid">
+        <h1 class="display">Agriculture</h1>
+        <p class="tagline-lg">Stockage et réseaux d’irrigation.</p>
+        <p>Réalisation de bassins, de réservoirs et de retenues d’eau d’irrigation étanches.</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Enjeu</dt><dd>Stocker l’eau sans pertes</dd></div>
+        <div><dt>Ouvrages</dt><dd>Bassins, retenues, réservoirs, réseaux</dd></div>
+        <div><dt>Matériaux</dt><dd>Géomembranes, géotextiles, conduites PEHD</dd></div>
+        <div><dt>Contrôle</dt><dd>Soudures contrôlées avant mise en eau</dd></div>
+      </dl>
+    </div>
+
+    <section class="section">
+      <div class="wrap svc-intro">
+        <div class="copy reveal">
+          <span class="eyebrow">Notre intervention</span>
+          <p class="lead">Nous réalisons des bassins, des réservoirs et des retenues d’eau d’irrigation, ainsi que les réseaux qui acheminent l’eau vers les cultures.</p>
+          <p>Pour une exploitation agricole, l’eau stockée doit rester disponible jusqu’à son utilisation. Une géomembrane soudée supprime les pertes par infiltration et sécurise la ressource.</p>
+          <p>Du terrassement de l’ouvrage à la pose de la géomembrane, nous accompagnons chaque projet jusqu’à la mise en service.</p>
+        </div>
+        <img class="reveal" src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane, entouré de collines" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section bg-cream">
+      <div class="wrap">
+        <div class="section-head">
           <div>
-            <span class="label">Secteur 05 / 07</span>
-            <h1 class="h1" style="margin-top:14px">Agriculture</h1>
-            <p class="tag">Stockage et réseaux d’irrigation.</p>
+            <span class="eyebrow">Ouvrages traités</span>
+            <h2 class="display">Ce que nous réalisons</h2>
           </div>
-          <p class="intro">Réalisation de bassins, de réservoirs et de retenues d’eau d’irrigation étanches.</p>
         </div>
-        <figure><img class="wide-img" src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane, entouré de collines"></figure>
-        <dl class="facts" style="margin-top:32px">
-          <div><dt>Enjeu</dt><dd>Stocker l’eau sans pertes</dd></div>
-          <div><dt>Ouvrages</dt><dd>Bassins, retenues, réservoirs, réseaux</dd></div>
-          <div><dt>Matériaux</dt><dd>Géomembranes, géotextiles, conduites PEHD</dd></div>
-          <div><dt>Contrôle</dt><dd>Soudures contrôlées avant mise en eau</dd></div>
-        </dl>
+        <div class="works">
+          <article class="work reveal">
+            <img src="images/photos/bassin-irrigation.jpg" alt="Bassin d’irrigation rempli d’eau" loading="lazy">
+            <div class="body"><span class="num">01</span><h3>Bassins d’irrigation</h3><p>Bassins revêtus d’une géomembrane posée sur géotextile et ancrée en crête de talus.</p></div>
+          </article>
+          <article class="work reveal">
+            <img src="images/photos/retenue-eau-irrigation.jpg" alt="Retenue d’eau étanchée par géomembrane" loading="lazy">
+            <div class="body"><span class="num">02</span><h3>Retenues d’eau</h3><p>Étanchéité des retenues d’eau destinées à l’irrigation, adaptée au relief du terrain.</p></div>
+          </article>
+          <article class="work reveal">
+            <img src="images/photos/reservoir-circulaire.jpg" alt="Réservoir circulaire revêtu de géomembrane" loading="lazy">
+            <div class="body"><span class="num">03</span><h3>Réservoirs circulaires</h3><p>Réservoirs à parois en treillis métallique, revêtus d’une géomembrane étanche.</p></div>
+          </article>
+          <article class="work reveal">
+            <img src="images/photos/station-irrigation.jpg" alt="Station de pompage et de filtration" loading="lazy">
+            <div class="body"><span class="num">04</span><h3>Réseaux d’irrigation</h3><p>Stations de pompage et de filtration, et conduites PEHD pour la distribution de l’eau.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-dark">
+      <div class="wrap system">
+        <div class="copy reveal">
+          <span class="eyebrow">Le système</span>
+          <h2 class="display" style="font-size:clamp(28px,3vw,40px)">Le complexe d’un bassin d’irrigation</h2>
+          <p>Un bassin d’irrigation associe généralement, de la surface vers le sol&nbsp;:</p>
+          <p class="note">En crête de talus, la géomembrane est ancrée dans une tranchée remblayée.</p>
+        </div>
+        <ol class="layers-list reveal">
+          <li>Géomembrane soudée, adaptée à l’exposition au soleil</li>
+          <li>Géotextile anti-poinçonnement</li>
+          <li>Support nivelé et compacté, débarrassé des pierres et des racines</li>
+        </ol>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>01</b><span class="label">Intervention</span></div>
-          <div class="main">
-            <div><h2 class="h2">Notre intervention</h2></div>
-          </div>
-        </div>
-        <div class="intro-grid">
-          <div class="reveal" style="display:grid;gap:24px;align-content:start">
-            <p class="lead">Nous réalisons des bassins, des réservoirs et des retenues d’eau d’irrigation, ainsi que les réseaux qui acheminent l’eau vers les cultures.</p>
-            <div class="prose">
-              <p>Pour une exploitation agricole, l’eau stockée doit rester disponible jusqu’à son utilisation. Une géomembrane soudée supprime les pertes par infiltration et sécurise la ressource.</p>
-              <p>Du terrassement de l’ouvrage à la pose de la géomembrane, nous accompagnons chaque projet jusqu’à la mise en service.</p>
-            </div>
-          </div>
-          <figure class="reveal" style="margin:0"><img src="images/photos/bassin-eau-colline.jpg" alt="Bassin d’eau étanché par géomembrane" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover"></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>02</b><span class="label">Ouvrages traités</span></div>
-          <div class="main">
-            <div><h2 class="h2">Ce que nous réalisons</h2></div>
-          </div>
-        </div>
-        <div class="rows">
-          <article class="row reveal">
-            <span class="n">01</span>
-            <div class="body">
-              <h3 class="h3">Bassins d’irrigation</h3>
-              <p>Bassins revêtus d’une géomembrane posée sur géotextile et ancrée en crête de talus.</p>
-            </div>
-            <figure class="media"><img src="images/photos/bassin-irrigation.jpg" alt="Bassin d’irrigation rempli d’eau" loading="lazy"></figure>
-          </article>
-          <article class="row reveal">
-            <span class="n">02</span>
-            <div class="body">
-              <h3 class="h3">Retenues d’eau</h3>
-              <p>Étanchéité des retenues d’eau destinées à l’irrigation, adaptée au relief du terrain.</p>
-            </div>
-            <figure class="media"><img src="images/photos/retenue-eau-irrigation.jpg" alt="Retenue d’eau étanchée par géomembrane" loading="lazy"></figure>
-          </article>
-          <article class="row reveal">
-            <span class="n">03</span>
-            <div class="body">
-              <h3 class="h3">Réservoirs circulaires</h3>
-              <p>Réservoirs à parois en treillis métallique, revêtus d’une géomembrane étanche.</p>
-            </div>
-            <figure class="media"><img src="images/photos/reservoir-circulaire.jpg" alt="Réservoir circulaire revêtu de géomembrane" loading="lazy"></figure>
-          </article>
-          <article class="row reveal">
-            <span class="n">04</span>
-            <div class="body">
-              <h3 class="h3">Réseaux d’irrigation</h3>
-              <p>Stations de pompage et de filtration, et conduites PEHD pour la distribution de l’eau.</p>
-            </div>
-            <figure class="media"><img src="images/photos/station-irrigation.jpg" alt="Station de pompage et de filtration" loading="lazy"></figure>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>03</b><span class="label">Le système</span></div>
-          <div class="main">
-            <div><h2 class="h2">Le complexe d’un bassin d’irrigation</h2></div>
-          </div>
-        </div>
-        <div class="system">
-          <div class="prose reveal">
-            <p>Un bassin d’irrigation associe généralement, de la surface vers le sol&nbsp;:</p>
-            <p class="note">En crête de talus, la géomembrane est ancrée dans une tranchée remblayée.</p>
-          </div>
-          <ol class="layers reveal">
-            <li><span class="sw k-membrane" aria-hidden="true"></span><span class="tx"><small>Couche 01</small>Géomembrane soudée, adaptée à l’exposition au soleil</span></li>
-            <li><span class="sw k-geotex" aria-hidden="true"></span><span class="tx"><small>Couche 02</small>Géotextile anti-poinçonnement</span></li>
-            <li><span class="sw k-support" aria-hidden="true"></span><span class="tx"><small>Couche 03</small>Support nivelé et compacté, débarrassé des pierres et des racines</span></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>04</b><span class="label">Démarche</span></div>
-          <div class="main">
-            <div><h2 class="h2">De l’étude à la réception</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Notre démarche</span>
+            <h2 class="display">De l’étude à la réception</h2>
           </div>
         </div>
         <ol class="steps">
@@ -161,8 +128,8 @@
           <li class="reveal"><strong>Réalisation</strong><span>Préparation du support, pose, soudure et ancrage.</span></li>
           <li class="reveal"><strong>Mise en service</strong><span>Contrôle des soudures, puis mise en eau.</span></li>
         </ol>
-        <div style="margin-top:56px;display:grid;gap:16px">
-          <span class="label">Matériaux mis en œuvre</span>
+        <div style="margin-top:48px;display:flex;flex-direction:column;gap:16px">
+          <span class="eyebrow">Matériaux mis en œuvre</span>
           <div class="mat-links">
             <a href="solutions.html#materiaux">Géomembranes</a>
             <a href="solutions.html#materiaux">Géotextiles</a>
@@ -171,32 +138,33 @@
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section bg-cream">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>05</b><span class="label">Qualité</span></div>
-          <div class="main">
-            <div><h2 class="h2">Normes &amp; engagements qualité</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Normes &amp; engagements qualité</span>
+            <h2 class="display">Une exigence à chaque étape</h2>
           </div>
         </div>
-        <div class="cols-3">
-          <article class="reveal"><h3 class="h3">Résistance chimique certifiée</h3><p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p></article>
-          <article class="reveal"><h3 class="h3">Soudure haute technologie</h3><p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p></article>
-          <article class="reveal"><h3 class="h3">Sécurité industrielle</h3><p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p></article>
-        </div>
+        <ul class="checklist">
+          <li class="reveal"><strong>Résistance chimique certifiée</strong><span>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</span></li>
+          <li class="reveal"><strong>Soudure haute technologie</strong><span>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</span></li>
+          <li class="reveal"><strong>Sécurité industrielle</strong><span>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</span></li>
+        </ul>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>06</b><span class="label">En images</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nos chantiers</h2></div>
-            <a class="link" href="realisations.html">Toutes nos réalisations</a>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">En images</span>
+            <h2 class="display">Nos chantiers</h2>
           </div>
+          <a class="link-more" href="realisations.html">Toutes nos réalisations →</a>
         </div>
-        <div class="masonry">
+        <div class="gallery">
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/bassin-eau-colline.jpg" alt="Bassin d’eau et talus aménagés" loading="lazy"></a><figcaption>Bassin d’eau et talus aménagés</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/reservoirs-circulaires.jpg" alt="Réservoirs circulaires revêtus de géomembrane" loading="lazy"></a><figcaption>Réservoirs circulaires revêtus de géomembrane</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/conduite-pehd.jpg" alt="Raccordement de conduites PEHD" loading="lazy"></a><figcaption>Raccordement de conduites PEHD</figcaption></figure>
           <figure class="reveal"><a href="realisations.html"><img src="images/photos/bassin-eau-rempli.jpg" alt="Bassin en eau après étanchéité" loading="lazy"></a><figcaption>Bassin en eau après étanchéité</figcaption></figure>
@@ -204,16 +172,16 @@
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section on-dark">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>07</b><span class="label">Sur le terrain</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nos équipes <em>en vidéo</em></h2></div>
-            <a class="link" href="realisations.html#videos">Toutes les vidéos</a>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Sur le terrain</span>
+            <h2 class="display">Nos équipes en vidéo</h2>
           </div>
+          <a class="link-more" href="realisations.html#videos">Toutes les vidéos →</a>
         </div>
-        <div class="reels">
+        <div class="reels two">
           <figure class="reel reveal">
             <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-collines.jpg" aria-label="Bassin en cours d’étanchéité">
               <source src="videos/bassin-geomembrane-collines.mp4" type="video/mp4">
@@ -221,7 +189,7 @@
             <figcaption>Bassin en cours d’étanchéité</figcaption>
           </figure>
         </div>
-        <div class="reels-land solo">
+        <div class="reels-land ">
           <figure class="reel reveal">
             <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane.jpg" aria-label="Bassin revêtu de géomembrane">
               <source src="videos/bassin-geomembrane.mp4" type="video/mp4">
@@ -232,33 +200,27 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta-band">
+      <img class="bg" src="images/photos/bassin-irrigation-collines.jpg" alt="" loading="lazy">
       <div class="wrap">
-        <div class="copy">
-          <span class="label">Contact</span>
-          <h2 class="h2">Un projet agricole&nbsp;?</h2>
+        <div>
+          <h2 class="display">Un projet dans le secteur de l’agriculture&nbsp;?</h2>
           <p>Décrivez-nous votre ouvrage&nbsp;: nous vous proposons la solution technique adaptée.</p>
-          <div class="actions">
-            <a class="btn btn-orange" href="contact.html?secteur=Agriculture#devis">Demander un devis</a>
-            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
-          </div>
         </div>
-        <div class="contact-lines">
-          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
-          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
-          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
+        <div class="cta-actions">
+          <a class="btn btn-accent btn-lg" href="contact.html?secteur=Agriculture#devis">Demander un devis</a>
+          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
         </div>
       </div>
     </section>
 
-    <nav class="wrap pager" aria-label="Autres secteurs">
+    <nav class="pager" aria-label="Autres secteurs">
       <a href="hydraulique.html"><span>← Secteur précédent</span><strong>Hydraulique</strong></a>
       <a href="batiment.html"><span>Secteur suivant →</span><strong>Bâtiment</strong></a>
     </nav>
   </main>
 
   <footer class="site-footer">
-    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -296,7 +258,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
 
   <script src="js/main.js"></script>
 </body>

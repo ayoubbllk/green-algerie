@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,107 +26,152 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html"><img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" width="1574" height="1000"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-      <nav class="nav" id="nav" aria-label="Navigation principale">
-        <a href="index.html" aria-current="page">Accueil</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" class="is-active">Accueil</a>
         <a href="solutions.html">Expertises &amp; solutions</a>
         <a href="realisations.html">Réalisations</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
+        <a class="btn btn-accent" href="contact.html#devis">Demander un devis</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="wrap hero-grid">
+      <div class="hero-slides" aria-hidden="true">
+        <img class="bg is-active" src="images/photos/hero-bassin-desert.jpg" alt="" data-caption="Bassin étanché par géomembrane, zone saharienne">
+        <img class="bg" src="images/photos/retention-bac-stockage-3.jpg" alt="" loading="lazy" data-caption="Rétention sous bac de stockage, site pétrolier">
+        <img class="bg" src="images/photos/bassin-irrigation-collines.jpg" alt="" loading="lazy" data-caption="Bassin d’irrigation étanché par géomembrane">
+      </div>
+      <div class="hero-caption"><span class="hero-dots"><i class="is-active"></i><i></i><i></i></span><span class="hero-cap-text">Bassin étanché par géomembrane, zone saharienne</span></div>
+      <div class="wrap">
         <div class="hero-copy">
-          <span class="label">Étanchéité · Géosynthétiques · Hydraulique</span>
-          <h1 class="h1">L’étanchéité de haute performance, <em>de l’ingénierie à la réalisation.</em></h1>
+          <span class="badge">Conception · Fourniture · Pose</span>
+          <h1 class="display">L’étanchéité de haute performance, <em>de l’ingénierie à la réalisation.</em></h1>
           <p>Nous concevons, fournissons et posons des systèmes géosynthétiques et hydrauliques adaptés aux contraintes techniques, mécaniques et environnementales les plus strictes.</p>
-          <div class="actions">
-            <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
-            <a class="btn btn-line" href="solutions.html">Nos expertises</a>
+          <div class="hero-actions">
+            <a class="btn btn-accent btn-lg" href="contact.html#devis">Demander un devis</a>
+            <a class="btn btn-ghost btn-lg" href="solutions.html">Découvrir nos expertises</a>
           </div>
         </div>
-        <figure>
-          <img src="images/photos/hero-bassin-desert.jpg" alt="Bassin étanché par géomembrane au pied des dunes, dans le Sahara algérien" width="1280" height="964">
-          <figcaption>Bassin étanché par géomembrane, zone saharienne.</figcaption>
-        </figure>
       </div>
+    </section>
+
+    <div class="hero-strip wrap">
+      <ul>
+        <li><strong>Conception</strong><span>Choix et combinaison des matériaux adaptés à chaque projet</span></li>
+        <li><strong>Fourniture</strong><span>Géomembranes, géotextiles, géocomposites et GSB</span></li>
+        <li><strong>Pose</strong><span>Mise en œuvre par des équipes qualifiées</span></li>
+        <li><strong>Contrôle</strong><span>Soudures contrôlées et traçabilité complète</span></li>
+      </ul>
+    </div>
+
+    <section class="section">
+      <div class="wrap intro">
+        <div class="intro-photos reveal">
+          <img class="main" src="images/photos/site-petrolier-controle.jpg" alt="Équipe en tenue de sécurité contrôlant une géomembrane sur un site pétrolier saharien" loading="lazy">
+          <img class="inset" src="images/photos/controle-soudure.jpg" alt="Techniciens contrôlant une soudure de géomembrane" loading="lazy">
+        </div>
+        <div class="intro-copy reveal">
+          <span class="eyebrow">Présentation de l’entreprise</span>
+          <h2 class="display">Spécialistes de l’étanchéité de haute performance</h2>
+          <p class="lead">Acteur de référence dans les secteurs de l’industrie et du pétrole, ALGRN Solutions apporte des solutions technologiques avancées pour le confinement des fluides agressifs, la protection des sols et la gestion des réseaux hydrauliques critiques.</p>
+          <p>Nous accompagnons nos partenaires de l’ingénierie à la réalisation des travaux, en garantissant une imperméabilité absolue et une conformité réglementaire totale.</p>
+          <ul class="checks">
+            <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3FA535" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Confinement des fluides agressifs</li>
+            <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3FA535" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Protection des sols</li>
+            <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3FA535" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Gestion des réseaux hydrauliques critiques</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-cream" id="secteurs">
       <div class="wrap">
-        <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
-        <ul class="strata-legend">
-          <li><i style="background:var(--pehd)"></i>Géomembrane</li>
-          <li><i style="background:var(--geotex)"></i>Géotextile</li>
-          <li><i style="background:var(--sand)"></i>Support compacté</li>
-          <li><i style="background:var(--soil)"></i>Sol en place</li>
-        </ul>
-        <div class="claims">
-          <div><b>Conception</b><span>Choix et combinaison des matériaux adaptés à chaque projet.</span></div>
-          <div><b>Fourniture</b><span>Géomembranes, géotextiles, géocomposites et GSB.</span></div>
-          <div><b>Pose</b><span>Mise en œuvre par des équipes qualifiées.</span></div>
-          <div><b>Contrôle</b><span>Soudures contrôlées et traçabilité complète.</span></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Nos secteurs d’intervention</span>
+            <h2 class="display">Nous intervenons dans 7&nbsp;secteurs clés</h2>
+          </div>
+          <a class="link-more" href="solutions.html">Voir nos domaines d’expertise →</a>
+        </div>
+        <div class="sectors">
+          <a class="sector wide reveal" href="industrie-petrole.html">
+            <img src="images/photos/retention-bac-stockage.jpg" alt="Rétention sous bac de stockage étanchée par géomembrane" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l6 4v-4l6 4V6l6 3v12z"/><path d="M3 21h18"/></svg></span>
+              <strong>Industrie &amp; Pétrole</strong>
+              <span>Confinement de fluides agressifs.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="environnement.html">
+            <img src="images/photos/talus-geotextile.jpg" alt="Pose de géotextile sur un grand talus" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-9 16-9 0 9-3 16-9 16z"/><path d="M4 21c3-5 6-8 10-10"/></svg></span>
+              <strong>Environnement</strong>
+              <span>Protection durable des écosystèmes.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="genie-civil.html">
+            <img src="images/photos/fondations-drainage.jpg" alt="Pose d’une nappe de protection sur un mur de fondation" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18h20"/><path d="M4 18v-2a8 8 0 0 1 16 0v2"/><path d="M10 8V5h4v3"/></svg></span>
+              <strong>Génie civil</strong>
+              <span>Pérennisation des infrastructures complexes.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="hydraulique.html">
+            <img src="images/photos/bassin-eau-plaine.jpg" alt="Bassin de stockage d’eau étanché par géomembrane" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></span>
+              <strong>Hydraulique</strong>
+              <span>Gestion et transport sécurisé des eaux.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="agriculture.html">
+            <img src="images/photos/retenue-eau-irrigation.jpg" alt="Retenue d’eau d’irrigation étanchée par géomembrane, entourée de collines" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-7-8-7 0 5 3 7 8 7z"/><path d="M12 10c0-3 3-6 8-6 0 4-3 6-8 6z"/></svg></span>
+              <strong>Agriculture</strong>
+              <span>Stockage et réseaux d’irrigation.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="batiment.html">
+            <img src="images/photos/toiture-terrasse.jpg" alt="Pose de membranes d’étanchéité sur une toiture-terrasse" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3v19"/><path d="M12 9l8 3v9"/><path d="M2 21h20"/><path d="M8 8h.01M8 12h.01M8 16h.01M16 15h.01"/></svg></span>
+              <strong>Bâtiment</strong>
+              <span>Étanchéité de toitures-terrasses techniques.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
+          <a class="sector reveal" href="ouvrages-art.html">
+            <img src="images/photos/radier-membrane-pvc-2.jpg" alt="Membrane d’étanchéité posée sur un grand radier" loading="lazy">
+            <div class="body">
+              <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h20"/><path d="M4 8v12M20 8v12"/><path d="M4 16a8 7 0 0 1 16 0"/></svg></span>
+              <strong>Ouvrages d’art</strong>
+              <span>Protection des structures d’envergure.</span>
+              <span class="more-hint">Découvrir le secteur →</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>01</b><span class="label">Présentation</span></div>
-          <div class="main">
-            <div><h2 class="h2">Spécialistes de l’étanchéité de haute performance</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Notre démarche</span>
+            <h2 class="display">De l’ingénierie à la réalisation des travaux</h2>
           </div>
-        </div>
-        <div class="intro-grid">
-          <p class="lead reveal">Acteur de référence dans les secteurs de l’industrie et du pétrole, ALGRN Solutions apporte des solutions technologiques avancées pour le confinement des fluides agressifs, la protection des sols et la gestion des réseaux hydrauliques critiques.</p>
-          <div class="reveal" style="display:grid;gap:20px">
-            <p class="prose">Nous accompagnons nos partenaires de l’ingénierie à la réalisation des travaux, en garantissant une imperméabilité absolue et une conformité réglementaire totale.</p>
-            <ul class="checks">
-              <li>Confinement des fluides agressifs</li>
-              <li>Protection des sols</li>
-              <li>Gestion des réseaux hydrauliques critiques</li>
-            </ul>
-          </div>
-        </div>
-        <div class="photo-row">
-          <figure class="reveal"><img src="images/photos/site-petrolier-controle.jpg" alt="Équipe contrôlant une soudure de géomembrane sur un site pétrolier saharien" loading="lazy"><figcaption>Contrôle d’une soudure sur un site pétrolier.</figcaption></figure>
-          <figure class="reveal"><img src="images/photos/controle-soudure.jpg" alt="Techniciens contrôlant une soudure de géomembrane" loading="lazy"><figcaption>Vérification d’une soudure.</figcaption></figure>
-          <figure class="reveal"><img src="images/photos/essai-soudure.jpg" alt="Essai de traction sur un échantillon de soudure" loading="lazy"><figcaption>Essai de traction sur échantillon.</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="secteurs">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>02</b><span class="label">Secteurs</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nous intervenons dans 7&nbsp;secteurs clés</h2></div>
-            <a class="link" href="solutions.html">Nos domaines d’expertise</a>
-          </div>
-        </div>
-        <ul class="index">
-          <li><a href="industrie-petrole.html"><span class="n">01</span><span class="t">Industrie &amp; Pétrole</span><span class="d">Confinement de fluides agressifs.</span><img src="images/photos/retention-bac-stockage.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="environnement.html"><span class="n">02</span><span class="t">Environnement</span><span class="d">Protection durable des écosystèmes.</span><img src="images/photos/talus-geotextile.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="genie-civil.html"><span class="n">03</span><span class="t">Génie civil</span><span class="d">Pérennisation des infrastructures complexes.</span><img src="images/photos/fondations-drainage.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="hydraulique.html"><span class="n">04</span><span class="t">Hydraulique</span><span class="d">Gestion et transport sécurisé des eaux.</span><img src="images/photos/bassin-eau-plaine.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="agriculture.html"><span class="n">05</span><span class="t">Agriculture</span><span class="d">Stockage et réseaux d’irrigation.</span><img src="images/photos/retenue-eau-irrigation.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="batiment.html"><span class="n">06</span><span class="t">Bâtiment</span><span class="d">Étanchéité de toitures-terrasses techniques.</span><img src="images/photos/toiture-terrasse.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-          <li><a href="ouvrages-art.html"><span class="n">07</span><span class="t">Ouvrages d’art</span><span class="d">Protection des structures d’envergure.</span><img src="images/photos/ouvrage-enterre-pvc.jpg" alt="" loading="lazy"><span class="arr" aria-hidden="true">→</span></a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>03</b><span class="label">Démarche</span></div>
-          <div class="main">
-            <div><h2 class="h2">De l’ingénierie à la réalisation des travaux</h2></div>
-            <p>Un interlocuteur unique pour concevoir, fournir, poser et contrôler votre système d’étanchéité.</p>
-          </div>
+          <p>Un interlocuteur unique pour concevoir, fournir, poser et contrôler votre système d’étanchéité.</p>
         </div>
         <ol class="steps">
           <li class="reveal"><strong>Ingénierie</strong><span>Analyse des contraintes techniques, mécaniques et environnementales du projet.</span></li>
@@ -137,36 +182,36 @@
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section on-dark">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>04</b><span class="label">Sur le terrain</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nos équipes <em>en action</em></h2></div>
-            <a class="link" href="realisations.html#videos">Toutes les vidéos</a>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Sur le terrain</span>
+            <h2 class="display">Nos équipes en action</h2>
           </div>
+          <a class="link-more" href="realisations.html#videos">Toutes les vidéos →</a>
         </div>
         <div class="reels">
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/deroulage-geomembrane.jpg" aria-label="Déroulage d’une géomembrane">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/deroulage-geomembrane.jpg" aria-label="Déroulage d’un rouleau de géomembrane par une équipe">
               <source src="videos/deroulage-geomembrane.mp4" type="video/mp4">
             </video>
             <figcaption>Déroulage d’une géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-geomembrane.jpg" aria-label="Soudure d’une géomembrane">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-geomembrane.jpg" aria-label="Soudure d’une géomembrane sur chantier">
               <source src="videos/soudure-geomembrane.mp4" type="video/mp4">
             </video>
             <figcaption>Soudure d’une géomembrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-automatique.jpg" aria-label="Soudure automatique d’une membrane">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/soudure-automatique.jpg" aria-label="Soudure d’une membrane à l’aide d’une soudeuse automatique">
               <source src="videos/soudure-automatique.mp4" type="video/mp4">
             </video>
             <figcaption>Soudure automatique d’une membrane</figcaption>
           </figure>
           <figure class="reel reveal">
-            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-collines.jpg" aria-label="Bassin en cours d’étanchéité">
+            <video data-autoplay muted loop playsinline preload="none" poster="videos/bassin-geomembrane-collines.jpg" aria-label="Bassin en cours d’étanchéité par géomembrane">
               <source src="videos/bassin-geomembrane-collines.mp4" type="video/mp4">
             </video>
             <figcaption>Bassin en cours d’étanchéité</figcaption>
@@ -177,61 +222,81 @@
 
     <section class="section">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>05</b><span class="label">Qualité</span></div>
-          <div class="main">
-            <div><h2 class="h2">Normes &amp; engagements qualité</h2></div>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Normes &amp; engagements qualité</span>
+            <h2 class="display">Une exigence à chaque étape</h2>
           </div>
         </div>
-        <div class="cols-3">
-          <article class="reveal"><img src="images/photos/bassin-industriel-geotextile.jpg" alt="Bassin en site industriel revêtu de géomembrane et de géotextile" loading="lazy"><h3 class="h3">Résistance chimique certifiée</h3><p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p></article>
-          <article class="reveal"><img src="images/photos/soudure-extrusion.jpg" alt="Techniciens réalisant une soudure par extrusion" loading="lazy"><h3 class="h3">Soudure haute technologie</h3><p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p></article>
-          <article class="reveal"><img src="images/photos/site-petrolier-soudure.jpg" alt="Technicien soudant une géomembrane, entouré d’agents d’un site pétrolier" loading="lazy"><h3 class="h3">Sécurité industrielle</h3><p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p></article>
+        <div>
+          <div class="expertise">
+            <article class="exp-card reveal">
+              <img src="images/photos/bassin-industriel-geotextile.jpg" alt="Bassin en site industriel revêtu de géomembrane et de géotextile" loading="lazy">
+              <div class="body">
+                <span class="num">01</span>
+                <h3>Résistance chimique certifiée</h3>
+                <p>Sélection de matériaux testés pour leur durabilité face aux agressions des hydrocarbures, des acides et des bases.</p>
+              </div>
+            </article>
+            <article class="exp-card reveal">
+              <img src="images/photos/essai-soudure.jpg" alt="Essai de traction sur un échantillon de soudure" loading="lazy">
+              <div class="body">
+                <span class="num">02</span>
+                <h3>Soudure haute technologie</h3>
+                <p>Contrôle des soudures double piste par test de pression d’air, étincelage ou ultrasons, avec une traçabilité complète.</p>
+              </div>
+            </article>
+            <article class="exp-card reveal">
+              <img src="images/photos/site-petrolier-soudure.jpg" alt="Technicien soudant une géomembrane sous la supervision d’agents d’un site pétrolier" loading="lazy">
+              <div class="body">
+                <span class="num">03</span>
+                <h3>Sécurité industrielle</h3>
+                <p>Équipes qualifiées et formées aux procédures de sécurité strictes des sites industriels et pétroliers&nbsp;: habilitations spécifiques, protocoles d’accès, équipements de protection individuelle avancés.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section bg-cream">
       <div class="wrap">
-        <div class="sec-head">
-          <div class="idx"><b>06</b><span class="label">Réalisations</span></div>
-          <div class="main">
-            <div><h2 class="h2">Nos chantiers en images</h2></div>
-            <a class="link" href="realisations.html">Toutes les réalisations</a>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Nos réalisations</span>
+            <h2 class="display">Nos chantiers en images</h2>
           </div>
+          <a class="link-more" href="realisations.html">Voir toutes les réalisations →</a>
         </div>
-        <div class="grid-preview">
-          <figure class="g-a reveal"><a href="realisations.html"><img src="images/photos/bourbier-petrolier-desert.jpg" alt="Équipe sur une géomembrane posée en zone désertique" loading="lazy"></a><figcaption>Pose de géomembrane sur un site pétrolier</figcaption></figure>
-          <figure class="g-b reveal"><a href="realisations.html"><img src="images/photos/stabilisation-talus.jpg" alt="Mise en place de géocellules sur un talus" loading="lazy"></a><figcaption>Stabilisation de talus</figcaption></figure>
-          <figure class="g-c reveal"><a href="realisations.html"><img src="images/photos/retention-bac-stockage-2.jpg" alt="Rétention sous bac de stockage étanchée par géomembrane" loading="lazy"></a><figcaption>Rétention sous bac de stockage</figcaption></figure>
-          <figure class="g-c reveal"><a href="realisations.html"><img src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane" loading="lazy"></a><figcaption>Bassin d’irrigation</figcaption></figure>
-          <figure class="g-c reveal"><a href="realisations.html"><img src="images/photos/ouvrage-enterre-pvc.jpg" alt="Membranes d’étanchéité posées sur un radier et des voiles en béton" loading="lazy"></a><figcaption>Étanchéité d’une structure en béton</figcaption></figure>
+        <div class="gallery gallery-preview">
+          <figure class="big reveal"><a href="realisations.html"><img src="images/photos/bourbier-petrolier-desert.jpg" alt="Équipe sur une géomembrane posée en zone désertique" loading="lazy"></a><figcaption>Pose de géomembrane sur un site pétrolier</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/bassin-irrigation-collines.jpg" alt="Bassin d’irrigation étanché par géomembrane" loading="lazy"></a><figcaption>Bassin d’irrigation</figcaption></figure>
+          <figure class="tall reveal"><a href="realisations.html"><img src="images/photos/stabilisation-talus.jpg" alt="Mise en place de géocellules sur un talus" loading="lazy"></a><figcaption>Stabilisation de talus</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/retention-bac-stockage-2.jpg" alt="Rétention sous bac de stockage étanchée par géomembrane" loading="lazy"></a><figcaption>Rétention sous bac de stockage</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/ouvrage-enterre-pvc.jpg" alt="Membranes d’étanchéité posées sur un radier et des voiles en béton" loading="lazy"></a><figcaption>Étanchéité d’une structure en béton</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/lagunage-geomembrane.jpg" alt="Lagune revêtue de géomembrane" loading="lazy"></a><figcaption>Lagune étanchée par géomembrane</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/toiture-terrasse-2.jpg" alt="Pose de membranes sur une toiture-terrasse" loading="lazy"></a><figcaption>Toiture-terrasse</figcaption></figure>
+          <figure class="reveal"><a href="realisations.html"><img src="images/photos/soudure-extrusion.jpg" alt="Techniciens réalisant une soudure par extrusion" loading="lazy"></a><figcaption>Soudure par extrusion</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta-band">
+      <img class="bg" src="images/photos/soudure-geomembrane.jpg" alt="" loading="lazy">
       <div class="wrap">
-        <div class="copy">
-          <span class="label">Contact</span>
-          <h2 class="h2">Un projet d’étanchéité&nbsp;? Parlons-en.</h2>
+        <div>
+          <h2 class="display">Un projet d’étanchéité&nbsp;? Parlons-en.</h2>
           <p>Décrivez-nous votre ouvrage&nbsp;: nous vous proposons la solution technique adaptée.</p>
-          <div class="actions">
-            <a class="btn btn-orange" href="contact.html#devis">Demander un devis</a>
-            <a class="btn btn-line" href="realisations.html">Voir nos réalisations</a>
-          </div>
         </div>
-        <div class="contact-lines">
-          <a href="tel:+213770201940"><small>Mobile</small><b>0770 201 940</b></a>
-          <a href="tel:+21328265995"><small>Téléphone</small><b>028 265 995</b></a>
-          <a href="mailto:algrnsolutionssarl@gmail.com"><small>E-mail</small><b>algrnsolutionssarl@gmail.com</b></a>
+        <div class="cta-actions">
+          <a class="btn btn-accent btn-lg" href="contact.html#devis">Demander un devis</a>
+          <a class="btn btn-white btn-lg" href="tel:+213770201940">Appeler le 0770 201 940</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="strata" aria-hidden="true"><span class="water"></span><span class="pehd"></span><span class="geotex"></span><span class="sand"></span><span class="soil"></span></div>
     <div class="wrap grid">
       <div class="brand">
         <img src="images/logo.png" alt="ALGRN Solutions Géosynthétique" loading="lazy">
@@ -269,7 +334,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg><span>WhatsApp</span></a>
+  <a class="wa-float" href="https://wa.me/213770201940" aria-label="Nous écrire sur WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
 
   <script src="js/main.js"></script>
 </body>
