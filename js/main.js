@@ -40,6 +40,81 @@
     }, 6000);
   }
 
+  // Domaines d'expertise : onglets avec défilement automatique
+  const xp = document.querySelector("[data-tabs]");
+  if (xp) {
+    const tabs = Array.prototype.slice.call(xp.querySelectorAll('[role="tab"]'));
+    let idx = 0;
+    const select = function (i, focus) {
+      idx = (i + tabs.length) % tabs.length;
+      tabs.forEach(function (t, n) {
+        const on = n === idx;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute("aria-controls")).classList.toggle("is-active", on);
+      });
+      if (focus) tabs[idx].focus();
+    };
+    tabs.forEach(function (t, n) {
+      t.addEventListener("click", function () { select(n); });
+      t.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowDown" || e.key === "ArrowRight") { e.preventDefault(); select(idx + 1, true); }
+        if (e.key === "ArrowUp" || e.key === "ArrowLeft") { e.preventDefault(); select(idx - 1, true); }
+      });
+      // La barre de progression de l'onglet actif déclenche le passage au suivant
+      t.addEventListener("animationend", function () { if (n === idx) select(idx + 1); });
+    });
+    xp.addEventListener("mouseenter", function () { xp.classList.add("is-paused"); });
+    xp.addEventListener("mouseleave", function () { xp.classList.remove("is-paused"); });
+    xp.addEventListener("focusin", function () { xp.classList.add("is-paused"); });
+    // Défilement uniquement lorsque la section est visible
+    if (canObserve) {
+      xp.classList.add("is-offscreen");
+      new IntersectionObserver(function (entries) {
+        xp.classList.toggle("is-offscreen", !entries[0].isIntersecting);
+      }, { threshold: 0.3 }).observe(xp);
+    }
+  }
+
+  // Applications : carrousel horizontal
+  const rail = document.querySelector(".rail");
+  if (rail) {
+    document.querySelectorAll("[data-rail]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const card = rail.querySelector(".rail-card");
+        const step = card ? card.getBoundingClientRect().width + 18 : 320;
+        rail.scrollBy({ left: step * Number(btn.getAttribute("data-rail")), behavior: reduceMotion ? "auto" : "smooth" });
+      });
+    });
+  }
+
+  // Matériaux : survol d'un matériau = mise en avant de sa couche
+  const stack = document.querySelector(".stack");
+  if (stack) {
+    const layers = stack.querySelectorAll("i");
+    document.querySelectorAll(".mat-list li").forEach(function (li) {
+      const n = li.getAttribute("data-layer");
+      li.addEventListener("mouseenter", function () {
+        stack.classList.add("has-focus");
+        layers.forEach(function (l) { l.classList.toggle("is-on", l.getAttribute("data-layer") === n); });
+      });
+      li.addEventListener("mouseleave", function () {
+        stack.classList.remove("has-focus");
+        layers.forEach(function (l) { l.classList.remove("is-on"); });
+      });
+    });
+  }
+
+  // Qualité : panneaux extensibles
+  const qPanels = document.querySelectorAll(".q-panel");
+  qPanels.forEach(function (p) {
+    const open = function () {
+      qPanels.forEach(function (o) { o.classList.toggle("is-open", o === p); });
+    };
+    p.addEventListener("mouseenter", open);
+    p.addEventListener("click", open);
+  });
+
   // Apparition au défilement
   const reveals = document.querySelectorAll(".reveal");
   if (canObserve) {
