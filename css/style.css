@@ -1287,3 +1287,38 @@ a.coord:hover { border-color: var(--green); }
 @media (max-width: 640px) {
   .stablot-photos { height: 360px; }
 }
+.gallery figure.wide { grid-column: span 2; }
+.colors-layout { display: grid; grid-template-columns: 1fr 300px; gap: 24px; align-items: stretch; }
+.colors-layout .swatches { grid-template-columns: 1fr 1fr; align-content: start; }
+.colors-photo { width: 100%; height: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius); }
+
+/* Accueil : section STABLOT */
+.stablot-home { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+.stablot-home-copy { display: flex; flex-direction: column; gap: 20px; }
+.stablot-home-copy h2 { font-size: clamp(30px, 3.2vw, 44px); }
+.stablot-home-copy .lead { margin: 0; font-size: 19px; line-height: 1.7; color: var(--ink); font-weight: 500; }
+.stablot-home-copy .cta-actions { align-items: center; gap: 22px; margin-top: 8px; }
+.stablot-home-photos { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: 230px 170px; gap: 12px; }
+.stablot-home-photos a { display: block; overflow: hidden; border-radius: var(--radius); }
+.stablot-home-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.stablot-home-photos a:hover img { transform: scale(1.04); }
+.stablot-home-photos .a { grid-column: 1; grid-row: 1 / 3; }
+.stablot-home-photos .b { grid-column: 2; grid-row: 1 / 3; }
+.stablot-home-photos .c, .stablot-home-photos .d { display: none; }
+@media (min-width: 1101px) {
+  .stablot-home-photos { grid-template-columns: 1.3fr 0.8fr 0.8fr; grid-template-rows: 250px 180px; }
+  .stablot-home-photos .a { grid-column: 1 / 3; grid-row: 1; }
+  .stablot-home-photos .b { grid-column: 3; grid-row: 1 / 3; }
+  .stablot-home-photos .c, .stablot-home-photos .d { display: block; grid-row: 2; }
+  .stablot-home-photos .c { grid-column: 1; }
+  .stablot-home-photos .d { grid-column: 2; }
+}
+@media (max-width: 900px) {
+  .stablot-home { grid-template-columns: 1fr; gap: 40px; }
+  .colors-layout { grid-template-columns: 1fr; }
+  .colors-photo { max-height: 360px; }
+}
+@media (max-width: 640px) {
+  .stablot-home-photos { grid-template-rows: 200px 150px; }
+  .colors-layout .swatches { grid-template-columns: 1fr 1fr; }
+}
