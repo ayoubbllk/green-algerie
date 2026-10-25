@@ -1255,3 +1255,35 @@ a.coord:hover { border-color: var(--green); }
   .xp-panel, .xp-panel img, .xp-card, .q-panel, .q-panel p, .stack i { transition: none; }
   .xp-tabs button::after { animation: none; transform: scaleX(1); }
 }
+
+/* Innovation : STABLOT */
+.stablot-photos { display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: 1fr 1fr; gap: 12px; height: 440px; }
+.stablot-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
+.stablot-photos .main { grid-row: span 2; }
+.stablot-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.stablot-list li { position: relative; padding-left: 20px; color: var(--muted); }
+.stablot-list li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 8px; height: 8px; border-radius: 2px; background: var(--accent); }
+.stablot-schema { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 420px; margin-top: 8px; }
+.stablot-schema img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; background: #fff; }
+.spec-layout { display: grid; grid-template-columns: 1fr 300px; gap: 32px; align-items: start; }
+.spec-table { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.spec-table table { width: 100%; min-width: 560px; border-collapse: collapse; }
+.spec-table th, .spec-table td { padding: 16px 18px; text-align: left; border-bottom: 1px solid var(--line); }
+.spec-table th { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--forest); }
+.spec-table tbody tr:last-child td { border-bottom: 0; }
+.spec-table td:first-child { font-family: "Saira", sans-serif; font-weight: 700; color: var(--forest); }
+.spec-quality { display: flex; flex-direction: column; gap: 14px; padding: 22px; border-radius: var(--radius); background: var(--cream); }
+.spec-quality img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; }
+.spec-quality strong { font-family: "Saira", sans-serif; font-size: 19px; color: var(--forest); }
+.swatches { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.swatches li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.swatches img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.swatches span { display: block; padding: 14px 18px; font-family: "Saira", sans-serif; font-weight: 700; font-size: 17px; }
+@media (max-width: 900px) {
+  .spec-layout { grid-template-columns: 1fr; }
+  .spec-quality { max-width: 420px; }
+  .swatches { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .stablot-photos { height: 360px; }
+}
